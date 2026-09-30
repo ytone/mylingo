@@ -1,0 +1,1012 @@
+[
+  {
+    "id": 1,
+    "category": "adjective_preposition",
+    "collocation": "interested in",
+    "question": "I am interested ___ studying public policy.",
+    "answer": "in",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "〜に興味がある",
+    "example": "I am interested in studying public policy."
+  },
+  {
+    "id": 2,
+    "category": "adjective_preposition",
+    "collocation": "responsible for",
+    "question": "I am responsible ___ managing the project.",
+    "answer": "for",
+    "distractors": ["of", "to", "NONE"],
+    "meaning": "〜を担当している",
+    "example": "I am responsible for managing the project."
+  },
+  {
+    "id": 3,
+    "category": "adjective_preposition",
+    "collocation": "familiar with",
+    "question": "I am familiar ___ online learning tools.",
+    "answer": "with",
+    "distractors": ["to", "in", "NONE"],
+    "meaning": "〜に詳しい",
+    "example": "I am familiar with online learning tools."
+  },
+  {
+    "id": 4,
+    "category": "adjective_preposition",
+    "collocation": "concerned about",
+    "question": "Many teachers are concerned ___ the use of AI.",
+    "answer": "about",
+    "distractors": ["for", "with", "NONE"],
+    "meaning": "〜を懸念している",
+    "example": "Many teachers are concerned about the use of AI."
+  },
+  {
+    "id": 5,
+    "category": "adjective_preposition",
+    "collocation": "aware of",
+    "question": "Students should be aware ___ the risks.",
+    "answer": "of",
+    "distractors": ["about", "for", "NONE"],
+    "meaning": "〜を認識している",
+    "example": "Students should be aware of the risks."
+  },
+  {
+    "id": 6,
+    "category": "adjective_preposition",
+    "collocation": "capable of",
+    "question": "AI is capable ___ processing large amounts of data.",
+    "answer": "of",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "〜する能力がある",
+    "example": "AI is capable of processing large amounts of data."
+  },
+  {
+    "id": 7,
+    "category": "adjective_preposition",
+    "collocation": "good at",
+    "question": "She is good ___ solving complex problems.",
+    "answer": "at",
+    "distractors": ["in", "for", "NONE"],
+    "meaning": "〜が得意である",
+    "example": "She is good at solving complex problems."
+  },
+  {
+    "id": 8,
+    "category": "adjective_preposition",
+    "collocation": "satisfied with",
+    "question": "I was satisfied ___ the course.",
+    "answer": "with",
+    "distractors": ["by", "about", "NONE"],
+    "meaning": "〜に満足している",
+    "example": "I was satisfied with the course."
+  },
+  {
+    "id": 9,
+    "category": "adjective_preposition",
+    "collocation": "similar to",
+    "question": "This situation is similar ___ my experience.",
+    "answer": "to",
+    "distractors": ["with", "from", "NONE"],
+    "meaning": "〜に似ている",
+    "example": "This situation is similar to my experience."
+  },
+  {
+    "id": 10,
+    "category": "adjective_preposition",
+    "collocation": "different from",
+    "question": "Online learning is different ___ traditional learning.",
+    "answer": "from",
+    "distractors": ["to", "with", "NONE"],
+    "meaning": "〜と異なる",
+    "example": "Online learning is different from traditional learning."
+  },
+
+  {
+    "id": 11,
+    "category": "adjective_preposition",
+    "collocation": "related to",
+    "question": "This issue is closely related ___ education.",
+    "answer": "to",
+    "distractors": ["with", "for", "NONE"],
+    "meaning": "〜に関連している",
+    "example": "This issue is closely related to education."
+  },
+  {
+    "id": 12,
+    "category": "adjective_preposition",
+    "collocation": "harmful to",
+    "question": "Too much screen time can be harmful ___ children.",
+    "answer": "to",
+    "distractors": ["for", "on", "NONE"],
+    "meaning": "〜に有害である",
+    "example": "Too much screen time can be harmful to children."
+  },
+  {
+    "id": 13,
+    "category": "adjective_preposition",
+    "collocation": "useful for",
+    "question": "This tool is useful ___ students who are learning English.",
+    "answer": "for",
+    "distractors": ["to", "with", "NONE"],
+    "meaning": "〜にとって役立つ",
+    "example": "This tool is useful for students who are learning English."
+  },
+  {
+    "id": 14,
+    "category": "adjective_preposition",
+    "collocation": "important for",
+    "question": "Regular feedback is important ___ student learning.",
+    "answer": "for",
+    "distractors": ["to", "of", "NONE"],
+    "meaning": "〜にとって重要である",
+    "example": "Regular feedback is important for student learning."
+  },
+  {
+    "id": 15,
+    "category": "adjective_preposition",
+    "collocation": "necessary for",
+    "question": "Good communication is necessary ___ effective teamwork.",
+    "answer": "for",
+    "distractors": ["to", "with", "NONE"],
+    "meaning": "〜に必要である",
+    "example": "Good communication is necessary for effective teamwork."
+  },
+  {
+    "id": 16,
+    "category": "adjective_preposition",
+    "collocation": "suitable for",
+    "question": "This course is suitable ___ beginners.",
+    "answer": "for",
+    "distractors": ["to", "with", "NONE"],
+    "meaning": "〜に適している",
+    "example": "This course is suitable for beginners."
+  },
+  {
+    "id": 17,
+    "category": "adjective_preposition",
+    "collocation": "available to",
+    "question": "The online materials are available ___ all students.",
+    "answer": "to",
+    "distractors": ["for", "with", "NONE"],
+    "meaning": "〜が利用できる",
+    "example": "The online materials are available to all students."
+  },
+  {
+    "id": 18,
+    "category": "adjective_preposition",
+    "collocation": "available for",
+    "question": "I am available ___ a short meeting tomorrow afternoon.",
+    "answer": "for",
+    "distractors": ["to", "at", "NONE"],
+    "meaning": "〜のために時間が空いている",
+    "example": "I am available for a short meeting tomorrow afternoon."
+  },
+  {
+    "id": 19,
+    "category": "adjective_preposition",
+    "collocation": "based on",
+    "question": "The decision should be based ___ evidence.",
+    "answer": "on",
+    "distractors": ["in", "from", "NONE"],
+    "meaning": "〜に基づいている",
+    "example": "The decision should be based on evidence."
+  },
+  {
+    "id": 20,
+    "category": "adjective_preposition",
+    "collocation": "involved in",
+    "question": "I am involved ___ several international education projects.",
+    "answer": "in",
+    "distractors": ["with", "on", "NONE"],
+    "meaning": "〜に関わっている",
+    "example": "I am involved in several international education projects."
+  },
+
+  {
+    "id": 21,
+    "category": "verb_preposition",
+    "collocation": "depend on",
+    "question": "The best approach depends ___ the situation.",
+    "answer": "on",
+    "distractors": ["of", "from", "NONE"],
+    "meaning": "〜次第である",
+    "example": "The best approach depends on the situation."
+  },
+  {
+    "id": 22,
+    "category": "verb_preposition",
+    "collocation": "focus on",
+    "question": "We should focus ___ the main problem.",
+    "answer": "on",
+    "distractors": ["in", "to", "NONE"],
+    "meaning": "〜に集中する",
+    "example": "We should focus on the main problem."
+  },
+  {
+    "id": 23,
+    "category": "verb_preposition",
+    "collocation": "rely on",
+    "question": "Many students rely ___ online resources.",
+    "answer": "on",
+    "distractors": ["in", "to", "NONE"],
+    "meaning": "〜に頼る",
+    "example": "Many students rely on online resources."
+  },
+  {
+    "id": 24,
+    "category": "verb_preposition",
+    "collocation": "contribute to",
+    "question": "Education contributes ___ economic growth.",
+    "answer": "to",
+    "distractors": ["for", "on", "NONE"],
+    "meaning": "〜に貢献する",
+    "example": "Education contributes to economic growth."
+  },
+  {
+    "id": 25,
+    "category": "verb_preposition",
+    "collocation": "lead to",
+    "question": "Too much stress can lead ___ poor performance.",
+    "answer": "to",
+    "distractors": ["for", "in", "NONE"],
+    "meaning": "〜につながる",
+    "example": "Too much stress can lead to poor performance."
+  },
+  {
+    "id": 26,
+    "category": "verb_preposition",
+    "collocation": "result in",
+    "question": "Poor communication can result ___ serious problems.",
+    "answer": "in",
+    "distractors": ["from", "to", "NONE"],
+    "meaning": "〜という結果になる",
+    "example": "Poor communication can result in serious problems."
+  },
+  {
+    "id": 27,
+    "category": "verb_preposition",
+    "collocation": "result from",
+    "question": "The problem may result ___ a lack of communication.",
+    "answer": "from",
+    "distractors": ["in", "of", "NONE"],
+    "meaning": "〜から生じる",
+    "example": "The problem may result from a lack of communication."
+  },
+  {
+    "id": 28,
+    "category": "verb_preposition",
+    "collocation": "participate in",
+    "question": "Many students participated ___ the program.",
+    "answer": "in",
+    "distractors": ["to", "at", "NONE"],
+    "meaning": "〜に参加する",
+    "example": "Many students participated in the program."
+  },
+  {
+    "id": 29,
+    "category": "verb_preposition",
+    "collocation": "benefit from",
+    "question": "Students can benefit ___ working in groups.",
+    "answer": "from",
+    "distractors": ["of", "with", "NONE"],
+    "meaning": "〜から恩恵を受ける",
+    "example": "Students can benefit from working in groups."
+  },
+  {
+    "id": 30,
+    "category": "verb_preposition",
+    "collocation": "suffer from",
+    "question": "Some college students suffer ___ excessive stress.",
+    "answer": "from",
+    "distractors": ["with", "of", "NONE"],
+    "meaning": "〜に苦しむ",
+    "example": "Some college students suffer from excessive stress."
+  },
+
+  {
+    "id": 31,
+    "category": "verb_preposition",
+    "collocation": "deal with",
+    "question": "Schools need to deal ___ this issue.",
+    "answer": "with",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "〜に対処する",
+    "example": "Schools need to deal with this issue."
+  },
+  {
+    "id": 32,
+    "category": "verb_preposition",
+    "collocation": "cope with",
+    "question": "Students need to learn how to cope ___ stress.",
+    "answer": "with",
+    "distractors": ["from", "to", "NONE"],
+    "meaning": "〜に対処する",
+    "example": "Students need to learn how to cope with stress."
+  },
+  {
+    "id": 33,
+    "category": "verb_preposition",
+    "collocation": "agree with",
+    "question": "I agree ___ David's opinion.",
+    "answer": "with",
+    "distractors": ["to", "on", "NONE"],
+    "meaning": "人・意見に賛成する",
+    "example": "I agree with David's opinion."
+  },
+  {
+    "id": 34,
+    "category": "verb_preposition",
+    "collocation": "apply for",
+    "question": "I plan to apply ___ the scholarship.",
+    "answer": "for",
+    "distractors": ["to", "at", "NONE"],
+    "meaning": "〜に応募する",
+    "example": "I plan to apply for the scholarship."
+  },
+  {
+    "id": 35,
+    "category": "verb_preposition",
+    "collocation": "apply to",
+    "question": "I plan to apply ___ several universities.",
+    "answer": "to",
+    "distractors": ["for", "at", "NONE"],
+    "meaning": "学校・組織に出願する",
+    "example": "I plan to apply to several universities."
+  },
+  {
+    "id": 36,
+    "category": "verb_preposition",
+    "collocation": "refer to",
+    "question": "The professor referred ___ a recent study.",
+    "answer": "to",
+    "distractors": ["about", "on", "NONE"],
+    "meaning": "〜に言及する",
+    "example": "The professor referred to a recent study."
+  },
+  {
+    "id": 37,
+    "category": "verb_preposition",
+    "collocation": "respond to",
+    "question": "Schools need to respond ___ students' needs.",
+    "answer": "to",
+    "distractors": ["for", "with", "NONE"],
+    "meaning": "〜に対応する",
+    "example": "Schools need to respond to students' needs."
+  },
+  {
+    "id": 38,
+    "category": "verb_preposition",
+    "collocation": "adapt to",
+    "question": "Students must adapt ___ new environments.",
+    "answer": "to",
+    "distractors": ["with", "for", "NONE"],
+    "meaning": "〜に適応する",
+    "example": "Students must adapt to new environments."
+  },
+  {
+    "id": 39,
+    "category": "verb_preposition",
+    "collocation": "succeed in",
+    "question": "She succeeded ___ completing the project.",
+    "answer": "in",
+    "distractors": ["to", "at", "NONE"],
+    "meaning": "〜することに成功する",
+    "example": "She succeeded in completing the project."
+  },
+  {
+    "id": 40,
+    "category": "verb_preposition",
+    "collocation": "specialize in",
+    "question": "The professor specializes ___ education policy.",
+    "answer": "in",
+    "distractors": ["on", "at", "NONE"],
+    "meaning": "〜を専門とする",
+    "example": "The professor specializes in education policy."
+  },
+
+  {
+    "id": 41,
+    "category": "verb_preposition",
+    "collocation": "apologize for",
+    "question": "I apologize ___ the late reply.",
+    "answer": "for",
+    "distractors": ["about", "to", "NONE"],
+    "meaning": "〜について謝る",
+    "example": "I apologize for the late reply."
+  },
+  {
+    "id": 42,
+    "category": "verb_preposition",
+    "collocation": "prepare for",
+    "question": "Students need to prepare ___ the exam.",
+    "answer": "for",
+    "distractors": ["to", "at", "NONE"],
+    "meaning": "〜に備える",
+    "example": "Students need to prepare for the exam."
+  },
+  {
+    "id": 43,
+    "category": "verb_preposition",
+    "collocation": "belong to",
+    "question": "This responsibility belongs ___ the project team.",
+    "answer": "to",
+    "distractors": ["with", "for", "NONE"],
+    "meaning": "〜に属する",
+    "example": "This responsibility belongs to the project team."
+  },
+  {
+    "id": 44,
+    "category": "verb_preposition",
+    "collocation": "concentrate on",
+    "question": "I need to concentrate ___ my writing.",
+    "answer": "on",
+    "distractors": ["in", "at", "NONE"],
+    "meaning": "〜に集中する",
+    "example": "I need to concentrate on my writing."
+  },
+  {
+    "id": 45,
+    "category": "verb_preposition",
+    "collocation": "ask for",
+    "question": "I would like to ask ___ more information about the program.",
+    "answer": "for",
+    "distractors": ["to", "about", "NONE"],
+    "meaning": "〜を求める",
+    "example": "I would like to ask for more information about the program."
+  },
+
+  {
+    "id": 46,
+    "category": "noun_preposition",
+    "collocation": "effect on",
+    "question": "AI may have a significant effect ___ education.",
+    "answer": "on",
+    "distractors": ["for", "to", "NONE"],
+    "meaning": "〜への影響",
+    "example": "AI may have a significant effect on education."
+  },
+  {
+    "id": 47,
+    "category": "noun_preposition",
+    "collocation": "impact on",
+    "question": "Social media has a major impact ___ young people.",
+    "answer": "on",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "〜への影響",
+    "example": "Social media has a major impact on young people."
+  },
+  {
+    "id": 48,
+    "category": "noun_preposition",
+    "collocation": "influence on",
+    "question": "Parents have a strong influence ___ their children.",
+    "answer": "on",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "〜への影響",
+    "example": "Parents have a strong influence on their children."
+  },
+  {
+    "id": 49,
+    "category": "noun_preposition",
+    "collocation": "reason for",
+    "question": "There are several reasons ___ this change.",
+    "answer": "for",
+    "distractors": ["of", "to", "NONE"],
+    "meaning": "〜の理由",
+    "example": "There are several reasons for this change."
+  },
+  {
+    "id": 50,
+    "category": "noun_preposition",
+    "collocation": "solution to",
+    "question": "We need to find a solution ___ this problem.",
+    "answer": "to",
+    "distractors": ["for", "of", "NONE"],
+    "meaning": "〜への解決策",
+    "example": "We need to find a solution to this problem."
+  },
+  {
+    "id": 51,
+    "category": "noun_preposition",
+    "collocation": "answer to",
+    "question": "There is no simple answer ___ this question.",
+    "answer": "to",
+    "distractors": ["for", "of", "NONE"],
+    "meaning": "〜への答え",
+    "example": "There is no simple answer to this question."
+  },
+  {
+    "id": 52,
+    "category": "noun_preposition",
+    "collocation": "approach to",
+    "question": "We need a new approach ___ teaching science.",
+    "answer": "to",
+    "distractors": ["for", "of", "NONE"],
+    "meaning": "〜へのアプローチ",
+    "example": "We need a new approach to teaching science."
+  },
+  {
+    "id": 53,
+    "category": "noun_preposition",
+    "collocation": "access to",
+    "question": "All students should have access ___ high-quality education.",
+    "answer": "to",
+    "distractors": ["for", "of", "NONE"],
+    "meaning": "〜を利用できること",
+    "example": "All students should have access to high-quality education."
+  },
+  {
+    "id": 54,
+    "category": "noun_preposition",
+    "collocation": "increase in",
+    "question": "There has been an increase ___ energy consumption.",
+    "answer": "in",
+    "distractors": ["of", "on", "NONE"],
+    "meaning": "〜の増加",
+    "example": "There has been an increase in energy consumption."
+  },
+  {
+    "id": 55,
+    "category": "noun_preposition",
+    "collocation": "decrease in",
+    "question": "The school reported a decrease ___ student absences.",
+    "answer": "in",
+    "distractors": ["of", "on", "NONE"],
+    "meaning": "〜の減少",
+    "example": "The school reported a decrease in student absences."
+  },
+
+  {
+    "id": 56,
+    "category": "noun_preposition",
+    "collocation": "difference between",
+    "question": "There is a significant difference ___ the two approaches.",
+    "answer": "between",
+    "distractors": ["among", "with", "NONE"],
+    "meaning": "〜の間の違い",
+    "example": "There is a significant difference between the two approaches."
+  },
+  {
+    "id": 57,
+    "category": "noun_preposition",
+    "collocation": "relationship between",
+    "question": "Researchers studied the relationship ___ sleep and academic performance.",
+    "answer": "between",
+    "distractors": ["with", "among", "NONE"],
+    "meaning": "〜の間の関係",
+    "example": "Researchers studied the relationship between sleep and academic performance."
+  },
+  {
+    "id": 58,
+    "category": "noun_preposition",
+    "collocation": "connection between",
+    "question": "The study found a connection ___ exercise and mental health.",
+    "answer": "between",
+    "distractors": ["with", "of", "NONE"],
+    "meaning": "〜の間の関連",
+    "example": "The study found a connection between exercise and mental health."
+  },
+  {
+    "id": 59,
+    "category": "noun_preposition",
+    "collocation": "advantage of",
+    "question": "One advantage ___ online learning is flexibility.",
+    "answer": "of",
+    "distractors": ["for", "to", "NONE"],
+    "meaning": "〜の利点",
+    "example": "One advantage of online learning is flexibility."
+  },
+  {
+    "id": 60,
+    "category": "noun_preposition",
+    "collocation": "disadvantage of",
+    "question": "One disadvantage ___ remote work is isolation.",
+    "answer": "of",
+    "distractors": ["for", "to", "NONE"],
+    "meaning": "〜の欠点",
+    "example": "One disadvantage of remote work is isolation."
+  },
+  {
+    "id": 61,
+    "category": "noun_preposition",
+    "collocation": "need for",
+    "question": "There is a growing need ___ digital skills.",
+    "answer": "for",
+    "distractors": ["of", "to", "NONE"],
+    "meaning": "〜の必要性",
+    "example": "There is a growing need for digital skills."
+  },
+  {
+    "id": 62,
+    "category": "noun_preposition",
+    "collocation": "demand for",
+    "question": "Demand ___ online courses has increased.",
+    "answer": "for",
+    "distractors": ["of", "to", "NONE"],
+    "meaning": "〜への需要",
+    "example": "Demand for online courses has increased."
+  },
+  {
+    "id": 63,
+    "category": "noun_preposition",
+    "collocation": "problem with",
+    "question": "There is a problem ___ this approach.",
+    "answer": "with",
+    "distractors": ["of", "to", "NONE"],
+    "meaning": "〜に関する問題",
+    "example": "There is a problem with this approach."
+  },
+  {
+    "id": 64,
+    "category": "noun_preposition",
+    "collocation": "difficulty with",
+    "question": "Some students have difficulty ___ academic writing.",
+    "answer": "with",
+    "distractors": ["of", "in", "NONE"],
+    "meaning": "〜が難しいこと",
+    "example": "Some students have difficulty with academic writing."
+  },
+  {
+    "id": 65,
+    "category": "noun_preposition",
+    "collocation": "experience in",
+    "question": "I have experience ___ managing international projects.",
+    "answer": "in",
+    "distractors": ["of", "with", "NONE"],
+    "meaning": "〜の経験",
+    "example": "I have experience in managing international projects."
+  },
+
+  {
+    "id": 66,
+    "category": "no_preposition",
+    "collocation": "describe",
+    "question": "Please describe ___ your experience working with students.",
+    "answer": "NONE",
+    "distractors": ["about", "of", "on"],
+    "meaning": "〜を説明する",
+    "example": "Please describe your experience working with students."
+  },
+  {
+    "id": 67,
+    "category": "no_preposition",
+    "collocation": "discuss",
+    "question": "We discussed ___ the problem during the meeting.",
+    "answer": "NONE",
+    "distractors": ["about", "on", "of"],
+    "meaning": "〜について議論する",
+    "example": "We discussed the problem during the meeting."
+  },
+  {
+    "id": 68,
+    "category": "no_preposition",
+    "collocation": "explain",
+    "question": "Could you explain ___ the new policy?",
+    "answer": "NONE",
+    "distractors": ["about", "of", "on"],
+    "meaning": "〜を説明する",
+    "example": "Could you explain the new policy?"
+  },
+  {
+    "id": 69,
+    "category": "no_preposition",
+    "collocation": "mention",
+    "question": "The professor mentioned ___ several useful resources.",
+    "answer": "NONE",
+    "distractors": ["about", "of", "on"],
+    "meaning": "〜に言及する",
+    "example": "The professor mentioned several useful resources."
+  },
+  {
+    "id": 70,
+    "category": "no_preposition",
+    "collocation": "consider",
+    "question": "We should consider ___ the long-term effects of this policy.",
+    "answer": "NONE",
+    "distractors": ["about", "of", "on"],
+    "meaning": "〜を検討する",
+    "example": "We should consider the long-term effects of this policy."
+  },
+  {
+    "id": 71,
+    "category": "no_preposition",
+    "collocation": "affect",
+    "question": "Social media can affect ___ students' behavior.",
+    "answer": "NONE",
+    "distractors": ["on", "to", "for"],
+    "meaning": "〜に影響を与える",
+    "example": "Social media can affect students' behavior."
+  },
+  {
+    "id": 72,
+    "category": "no_preposition",
+    "collocation": "influence",
+    "question": "Teachers can strongly influence ___ students' motivation.",
+    "answer": "NONE",
+    "distractors": ["on", "to", "for"],
+    "meaning": "〜に影響を与える",
+    "example": "Teachers can strongly influence students' motivation."
+  },
+  {
+    "id": 73,
+    "category": "no_preposition",
+    "collocation": "approach",
+    "question": "I approached ___ the professor after class.",
+    "answer": "NONE",
+    "distractors": ["to", "with", "for"],
+    "meaning": "〜に近づく／話しかける",
+    "example": "I approached the professor after class."
+  },
+  {
+    "id": 74,
+    "category": "no_preposition",
+    "collocation": "contact",
+    "question": "Please contact ___ the admissions office if you have any questions.",
+    "answer": "NONE",
+    "distractors": ["to", "with", "for"],
+    "meaning": "〜に連絡する",
+    "example": "Please contact the admissions office if you have any questions."
+  },
+  {
+    "id": 75,
+    "category": "no_preposition",
+    "collocation": "attend",
+    "question": "I attended ___ a guest lecture on Monday.",
+    "answer": "NONE",
+    "distractors": ["to", "at", "in"],
+    "meaning": "〜に出席する",
+    "example": "I attended a guest lecture on Monday."
+  },
+
+  {
+    "id": 76,
+    "category": "no_preposition",
+    "collocation": "enter",
+    "question": "The students entered ___ the classroom quietly.",
+    "answer": "NONE",
+    "distractors": ["into", "to", "in"],
+    "meaning": "〜に入る",
+    "example": "The students entered the classroom quietly."
+  },
+  {
+    "id": 77,
+    "category": "no_preposition",
+    "collocation": "reach",
+    "question": "The team finally reached ___ a conclusion.",
+    "answer": "NONE",
+    "distractors": ["to", "at", "for"],
+    "meaning": "〜に到達する",
+    "example": "The team finally reached a conclusion."
+  },
+  {
+    "id": 78,
+    "category": "no_preposition",
+    "collocation": "answer",
+    "question": "Please answer ___ the following question.",
+    "answer": "NONE",
+    "distractors": ["to", "for", "about"],
+    "meaning": "〜に答える",
+    "example": "Please answer the following question."
+  },
+  {
+    "id": 79,
+    "category": "no_preposition",
+    "collocation": "join",
+    "question": "I joined ___ the research team last year.",
+    "answer": "NONE",
+    "distractors": ["in", "to", "with"],
+    "meaning": "〜に加わる",
+    "example": "I joined the research team last year."
+  },
+  {
+    "id": 80,
+    "category": "no_preposition",
+    "collocation": "visit",
+    "question": "I visited ___ the university campus last month.",
+    "answer": "NONE",
+    "distractors": ["to", "at", "in"],
+    "meaning": "〜を訪問する",
+    "example": "I visited the university campus last month."
+  },
+  {
+    "id": 81,
+    "category": "no_preposition",
+    "collocation": "emphasize",
+    "question": "The professor emphasized ___ the importance of regular practice.",
+    "answer": "NONE",
+    "distractors": ["on", "about", "of"],
+    "meaning": "〜を強調する",
+    "example": "The professor emphasized the importance of regular practice."
+  },
+  {
+    "id": 82,
+    "category": "no_preposition",
+    "collocation": "request",
+    "question": "I would like to request ___ more information about the program.",
+    "answer": "NONE",
+    "distractors": ["for", "of", "about"],
+    "meaning": "〜を依頼する／求める",
+    "example": "I would like to request more information about the program."
+  },
+  {
+    "id": 83,
+    "category": "no_preposition",
+    "collocation": "resemble",
+    "question": "This situation resembles ___ one I experienced last year.",
+    "answer": "NONE",
+    "distractors": ["to", "with", "of"],
+    "meaning": "〜に似ている",
+    "example": "This situation resembles one I experienced last year."
+  },
+  {
+    "id": 84,
+    "category": "no_preposition",
+    "collocation": "oppose",
+    "question": "Some students oppose ___ the proposed change.",
+    "answer": "NONE",
+    "distractors": ["to", "against", "for"],
+    "meaning": "〜に反対する",
+    "example": "Some students oppose the proposed change."
+  },
+  {
+    "id": 85,
+    "category": "no_preposition",
+    "collocation": "support",
+    "question": "The evidence supports ___ this argument.",
+    "answer": "NONE",
+    "distractors": ["for", "of", "to"],
+    "meaning": "〜を支持する",
+    "example": "The evidence supports this argument."
+  },
+
+  {
+    "id": 86,
+    "category": "contrast",
+    "collocation": "effect on vs affect",
+    "question": "This change may have an effect ___ student performance.",
+    "answer": "on",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "名詞 effect は on を伴う",
+    "example": "This change may have an effect on student performance."
+  },
+  {
+    "id": 87,
+    "category": "contrast",
+    "collocation": "effect on vs affect",
+    "question": "This change may affect ___ student performance.",
+    "answer": "NONE",
+    "distractors": ["on", "to", "for"],
+    "meaning": "動詞 affect は前置詞なし",
+    "example": "This change may affect student performance."
+  },
+  {
+    "id": 88,
+    "category": "contrast",
+    "collocation": "influence on vs influence",
+    "question": "Teachers have a strong influence ___ their students.",
+    "answer": "on",
+    "distractors": ["to", "for", "NONE"],
+    "meaning": "名詞 influence は on を伴う",
+    "example": "Teachers have a strong influence on their students."
+  },
+  {
+    "id": 89,
+    "category": "contrast",
+    "collocation": "influence on vs influence",
+    "question": "Teachers can influence ___ their students in many ways.",
+    "answer": "NONE",
+    "distractors": ["on", "to", "for"],
+    "meaning": "動詞 influence は前置詞なし",
+    "example": "Teachers can influence their students in many ways."
+  },
+  {
+    "id": 90,
+    "category": "contrast",
+    "collocation": "discussion about vs discuss",
+    "question": "We had a discussion ___ the use of AI in education.",
+    "answer": "about",
+    "distractors": ["on", "of", "NONE"],
+    "meaning": "名詞 discussion は about を取れる",
+    "example": "We had a discussion about the use of AI in education."
+  },
+  {
+    "id": 91,
+    "category": "contrast",
+    "collocation": "discussion about vs discuss",
+    "question": "We discussed ___ the use of AI in education.",
+    "answer": "NONE",
+    "distractors": ["about", "on", "of"],
+    "meaning": "動詞 discuss は前置詞なし",
+    "example": "We discussed the use of AI in education."
+  },
+  {
+    "id": 92,
+    "category": "contrast",
+    "collocation": "explanation of vs explain",
+    "question": "The professor gave a clear explanation ___ the new concept.",
+    "answer": "of",
+    "distractors": ["about", "on", "NONE"],
+    "meaning": "名詞 explanation は of を伴う",
+    "example": "The professor gave a clear explanation of the new concept."
+  },
+  {
+    "id": 93,
+    "category": "contrast",
+    "collocation": "explanation of vs explain",
+    "question": "The professor clearly explained ___ the new concept.",
+    "answer": "NONE",
+    "distractors": ["about", "of", "on"],
+    "meaning": "動詞 explain は目的語の前に前置詞不要",
+    "example": "The professor clearly explained the new concept."
+  },
+  {
+    "id": 94,
+    "category": "contrast",
+    "collocation": "answer to vs answer",
+    "question": "I could not find the answer ___ the question.",
+    "answer": "to",
+    "distractors": ["for", "of", "NONE"],
+    "meaning": "名詞 answer は to を伴う",
+    "example": "I could not find the answer to the question."
+  },
+  {
+    "id": 95,
+    "category": "contrast",
+    "collocation": "answer to vs answer",
+    "question": "I could not answer ___ the question.",
+    "answer": "NONE",
+    "distractors": ["to", "for", "of"],
+    "meaning": "動詞 answer は前置詞なし",
+    "example": "I could not answer the question."
+  },
+
+  {
+    "id": 96,
+    "category": "email",
+    "collocation": "look forward to",
+    "question": "I look forward ___ hearing from you.",
+    "answer": "to",
+    "distractors": ["for", "at", "NONE"],
+    "meaning": "〜を楽しみにする",
+    "example": "I look forward to hearing from you."
+  },
+  {
+    "id": 97,
+    "category": "email",
+    "collocation": "thank you for",
+    "question": "Thank you ___ your helpful advice.",
+    "answer": "for",
+    "distractors": ["to", "of", "NONE"],
+    "meaning": "〜に感謝する",
+    "example": "Thank you for your helpful advice."
+  },
+  {
+    "id": 98,
+    "category": "email",
+    "collocation": "ask about",
+    "question": "I am writing to ask ___ the application process.",
+    "answer": "about",
+    "distractors": ["for", "of", "NONE"],
+    "meaning": "〜について尋ねる",
+    "example": "I am writing to ask about the application process."
+  },
+  {
+    "id": 99,
+    "category": "speaking",
+    "collocation": "have difficulty -ing",
+    "question": "I sometimes have difficulty ___ expressing my ideas clearly.",
+    "answer": "NONE",
+    "distractors": ["in", "with", "to"],
+    "meaning": "have difficulty doing で「〜するのに苦労する」",
+    "example": "I sometimes have difficulty expressing my ideas clearly."
+  },
+  {
+    "id": 100,
+    "category": "speaking",
+    "collocation": "play a role in",
+    "question": "Technology plays an important role ___ modern education.",
+    "answer": "in",
+    "distractors": ["on", "for", "NONE"],
+    "meaning": "〜で重要な役割を果たす",
+    "example": "Technology plays an important role in modern education."
+  }
+]
