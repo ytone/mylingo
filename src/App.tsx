@@ -238,6 +238,7 @@ function QuizView({ question, current, total, selected, onChoose, onNext, onExit
   onExit: () => void
 }) {
   const choices = useMemo(() => shuffle([question.answer, ...question.distractors]), [question])
+  const nextButtonRef = useRef<HTMLButtonElement | null>(null)
   useEffect(() => {
     const handler = (event: KeyboardEvent) => {
       if (event.repeat) return
@@ -253,6 +254,17 @@ function QuizView({ question, current, total, selected, onChoose, onNext, onExit
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
   }, [choices, selected, onChoose, onNext])
+  useEffect(() => {
+    if (!selected || !window.matchMedia('(max-width: 680px)').matches) return
+    const frame = window.requestAnimationFrame(() => {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      nextButtonRef.current?.scrollIntoView({
+        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+        block: 'end',
+      })
+    })
+    return () => window.cancelAnimationFrame(frame)
+  }, [selected])
 
   return <div className="quiz-wrap">
     <header className="quiz-header"><button onClick={onExit} aria-label="クイズを終了">×</button><div className="quiz-progress"><span style={{ width: `${current / total * 100}%` }} /></div><strong>{current}<span> / {total}</span></strong></header>
@@ -275,7 +287,7 @@ function QuizView({ question, current, total, selected, onChoose, onNext, onExit
         <p className="answer-line"><span>正解</span><strong>{displayChoice(question.answer)}</strong></p>
         <div className="explanation"><span className="answer-category">{CATEGORY_LABELS[question.category]}</span><h2>{question.collocation}</h2><p>{question.meaning}</p><blockquote>{question.example}</blockquote></div>
       </div>}
-      {selected && <button className="next-button" onClick={onNext}>{current === total ? '結果を見る' : '次へ'} <span>↵</span></button>}
+      {selected && <button ref={nextButtonRef} className="next-button" onClick={onNext}>{current === total ? '結果を見る' : '次へ'} <span>↵</span></button>}
     </article>
   </div>
 }

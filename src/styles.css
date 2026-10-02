@@ -156,9 +156,9 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 45px; color: #96998f
   .quiz-card > h1 { font-size: clamp(20px, 5.8vw, 24px); line-height: 1.35; }
   .quiz-main { padding: 0; }
   .choice-list { margin-top: 18px; gap: 8px; }
-  .choice-list button { min-height: 52px; padding: 8px 14px; grid-template-columns: 32px 1fr auto; gap: 10px; font-size: 15px; }
+  .choice-list button { min-height: 58px; }
   .quiz-card--answered .choice-list { margin-top: 14px; gap: 6px; }
-  .quiz-card--answered .choice-list button { min-height: 48px; padding-block: 6px; }
+  .quiz-card--answered .choice-list button { min-height: 58px; }
   .quiz-card--answered .feedback { margin-top: 12px; padding: 12px 14px; }
   .quiz-card--answered .feedback-title { margin-bottom: 8px; }
   .quiz-card--answered .answer-line { margin: 3px 0; font-size: 13px; }
@@ -167,7 +167,7 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 45px; color: #96998f
   .quiz-card--answered .explanation h2 { font-size: 17px; }
   .quiz-card--answered .explanation > p { margin: 2px 0 7px; font-size: 12px; }
   .quiz-card--answered .explanation blockquote { font-size: 13px; line-height: 1.45; }
-  .quiz-card--answered .next-button { min-height: 50px; margin-top: auto; flex: 0 0 auto; }
+  .quiz-card--answered .next-button { min-height: 50px; margin-top: auto; flex: 0 0 auto; scroll-margin-bottom: max(12px, env(safe-area-inset-bottom)); }
   .filters { grid-template-columns: 1fr; }.question-table > button { grid-template-columns: 1fr; gap: 12px; }.question-meta { grid-template-columns: repeat(4, 1fr) 12px; text-align: left; padding-left: 0; }.question-meta span { display: flex; flex-direction: column; }.question-meta span:nth-child(1)::after { content: 'mastery'; font-size: 8px; }.question-meta span:nth-child(2)::after { content: '正答率'; font-size: 8px; }.question-meta span:nth-child(3)::after { content: '回答'; font-size: 8px; }.question-meta span:nth-child(4)::after { content: '最終'; font-size: 8px; }
   .detail-card { padding: 23px 18px; }.detail-card > h1 { font-size: 28px; }.detail-stats { grid-template-columns: 1fr 1fr; }.detail-stats > div:nth-child(3n) { border-right: 1px solid var(--line); }.detail-stats > div:nth-child(2n) { border-right: 0; }.detail-stats > div:nth-child(n+4) { border-bottom: 1px solid var(--line); }.detail-stats > div:nth-child(n+5) { border-bottom: 0; }
   .settings-card { grid-template-columns: 1fr; gap: 13px; }.settings-card .secondary-button, .danger-zone button { width: 100%; }
@@ -179,8 +179,7 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 45px; color: #96998f
   .quiz-card { min-height: calc(100svh - 54px - max(8px, env(safe-area-inset-bottom))); padding-top: 8px; }
   .quiz-card > h1 { font-size: 18px; line-height: 1.32; }
   .choice-list, .quiz-card--answered .choice-list { margin-top: 12px; gap: 5px; }
-  .choice-list button, .quiz-card--answered .choice-list button { min-height: 44px; padding: 5px 12px; font-size: 14px; }
-  .choice-list kbd { width: 26px; height: 26px; }
+  .choice-list button, .quiz-card--answered .choice-list button { min-height: 58px; }
   .quiz-card--answered .feedback { margin-top: 8px; padding: 9px 12px; }
   .quiz-card--answered .feedback-title { margin-bottom: 5px; font-size: 13px; }
   .quiz-card--answered .answer-line { margin: 2px 0; font-size: 12px; }
