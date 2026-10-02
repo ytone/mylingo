@@ -256,10 +256,8 @@ function QuizView({ question, current, total, selected, onChoose, onNext, onExit
 
   return <div className="quiz-wrap">
     <header className="quiz-header"><button onClick={onExit} aria-label="クイズを終了">×</button><div className="quiz-progress"><span style={{ width: `${current / total * 100}%` }} /></div><strong>{current}<span> / {total}</span></strong></header>
-    <article className="quiz-card">
-      <p className="category-chip">TOEFL COLLOCATION</p>
+    <article className={`quiz-card${selected ? ' quiz-card--answered' : ''}`}>
       <h1>{question.question}</h1>
-      <p className="quiz-prompt">空欄に入る最も自然な表現を選んでください。</p>
       <div className="choice-list">
         {choices.map((choice, choiceIndex) => {
           let state = ''
