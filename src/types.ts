@@ -39,12 +39,74 @@ export interface DailyRecord {
   bestScore: number
   perfectSets: number
   achievedDailyPerfect: boolean
+  byCourse?: Partial<Record<CourseId, CourseDailyRecord>>
 }
 
 export interface AppData {
-  version: 1
+  version: 2
   progress: Record<string, QuestionProgress>
   dailyHistory: Record<string, DailyRecord>
+  listening: ListeningStats
+}
+
+export type CourseId = 'collocation' | 'exact-listening'
+
+export interface CourseDefinition {
+  id: CourseId
+  name: string
+  questionsPerSet: number
+}
+
+export interface CourseDailyRecord {
+  setsCompleted: number
+  answered: number
+  exact: number
+  bestScore: number
+}
+
+export type ListeningAssessment = 'exact' | 'minor_spelling_error' | 'listening_error'
+export type ListeningTag = 'article' | 'preposition' | 'plural-s' | 'past-tense' | 'auxiliary' | 'other'
+
+export interface ListeningQuestion {
+  id: string
+  order: number
+  chunkCount: 1 | 2 | 3
+  text: string
+  audioSrc?: string
+  focusTags?: ListeningTag[]
+}
+
+export interface ListeningScenario {
+  id: string
+  title: string
+  context?: string
+  questions: ListeningQuestion[]
+}
+
+export interface ListeningDataset {
+  schemaVersion: 1
+  scenarios: ListeningScenario[]
+}
+
+export interface ListeningAnswerRecord {
+  questionId: string
+  scenarioId: string
+  answer: string
+  expected: string
+  assessment: ListeningAssessment
+  missedTags: ListeningTag[]
+  answeredAt: string
+}
+
+export interface ListeningStats {
+  answered: number
+  exact: number
+  minorSpellingError: number
+  listeningError: number
+  setsCompleted: number
+  missedTags: Record<ListeningTag, number>
+  recentAnswers: ListeningAnswerRecord[]
+  completedScenarioIds: string[]
 }
 
 export type QuizMode = 'normal' | 'weak' | 'all' | 'category' | 'review'

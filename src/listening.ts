@@ -1,0 +1,80 @@
+import type { ListeningAssessment, ListeningQuestion, ListeningTag } from './types'
+
+const articles = new Set(['a', 'an', 'the'])
+const prepositions = new Set(['about', 'above', 'after', 'at', 'before', 'behind', 'below', 'between', 'by', 'for', 'from', 'in', 'into', 'of', 'on', 'over', 'through', 'to', 'under', 'with', 'without'])
+const auxiliaries = new Set(['am', 'are', 'be', 'been', 'being', 'can', 'could', 'did', 'do', 'does', 'had', 'has', 'have', 'is', 'may', 'might', 'must', 'shall', 'should', 'was', 'were', 'will', 'would'])
+
+export const normalizeListeningText = (value: string): string => value
+  .normalize('NFKC')
+  .toLowerCase()
+  .replace(/[’‘]/g, "'")
+  .replace(/[^a-z0-9'\s-]/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim()
+
+const editDistance = (a: string, b: string): number => {
+  const previous = Array.from({ length: b.length + 1 }, (_, i) => i)
+  for (let i = 1; i <= a.length; i += 1) {
+    const current = [i]
+    for (let j = 1; j <= b.length; j += 1) current[j] = Math.min(current[j - 1] + 1, previous[j] + 1, previous[j - 1] + Number(a[i - 1] !== b[j - 1]))
+    previous.splice(0, previous.length, ...current)
+  }
+  return previous[b.length]
+}
+
+const tagForWord = (word: string): ListeningTag => {
+  if (articles.has(word)) return 'article'
+  if (prepositions.has(word)) return 'preposition'
+  if (auxiliaries.has(word)) return 'auxiliary'
+  if (word.endsWith('ed')) return 'past-tense'
+  if (word.endsWith('s') && !word.endsWith('ss')) return 'plural-s'
+  return 'other'
+}
+
+export interface ListeningEvaluation {
+  assessment: ListeningAssessment
+  distance: number
+  expectedWords: string[]
+  answerWords: string[]
+  missedTags: ListeningTag[]
+}
+
+export function evaluateListeningAnswer(answer: string, question: ListeningQuestion): ListeningEvaluation {
+  const expected = normalizeListeningText(question.text)
+  const actual = normalizeListeningText(answer)
+  const expectedWords = expected.split(' ').filter(Boolean)
+  const answerWords = actual.split(' ').filter(Boolean)
+  if (actual === expected) return { assessment: 'exact', distance: 0, expectedWords, answerWords, missedTags: [] }
+
+  const distance = editDistance(actual, expected)
+  const sameWordCount = expectedWords.length === answerWords.length
+  const missingWords = wordDiff(actual, expected).filter((part) => part.kind === 'missing').map((part) => part.value)
+  const missedTags = [...new Set(missingWords.map(tagForWord).filter((tag) => tag !== 'other' || question.focusTags?.includes('other')))]
+  const structuralError = sameWordCount && expectedWords.some((word, index) => {
+    const heard = answerWords[index]
+    if (word === heard) return false
+    if ((articles.has(word) && articles.has(heard)) || (prepositions.has(word) && prepositions.has(heard)) || (auxiliaries.has(word) && auxiliaries.has(heard))) return true
+    if (word.endsWith('ed') && heard === word.slice(0, -2)) return true
+    if (word.endsWith('s') && heard === word.slice(0, -1)) return true
+    return false
+  })
+  const minor = sameWordCount && !structuralError && distance <= Math.max(1, Math.floor(expected.length * 0.08))
+  return { assessment: minor ? 'minor_spelling_error' : 'listening_error', distance, expectedWords, answerWords, missedTags }
+}
+
+export interface DiffPart { value: string; kind: 'same' | 'missing' | 'extra' }
+
+export function wordDiff(answer: string, expected: string): DiffPart[] {
+  const a = normalizeListeningText(answer).split(' ').filter(Boolean)
+  const b = normalizeListeningText(expected).split(' ').filter(Boolean)
+  const table = Array.from({ length: a.length + 1 }, () => Array<number>(b.length + 1).fill(0))
+  for (let i = a.length - 1; i >= 0; i -= 1) for (let j = b.length - 1; j >= 0; j -= 1) table[i][j] = a[i] === b[j] ? table[i + 1][j + 1] + 1 : Math.max(table[i + 1][j], table[i][j + 1])
+  const parts: DiffPart[] = []
+  let i = 0; let j = 0
+  while (i < a.length || j < b.length) {
+    if (i < a.length && j < b.length && a[i] === b[j]) { parts.push({ value: b[j], kind: 'same' }); i += 1; j += 1 }
+    else if (j < b.length && (i === a.length || table[i][j + 1] >= table[i + 1][j])) { parts.push({ value: b[j], kind: 'missing' }); j += 1 }
+    else { parts.push({ value: a[i], kind: 'extra' }); i += 1 }
+  }
+  return parts
+}

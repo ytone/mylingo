@@ -1,6 +1,6 @@
 # mylingo
 
-TOEFL Writing / Speakingで頻出するcollocationと前置詞表現を、10問ずつ反復学習する個人用Webアプリです。バックエンドや認証は使わず、学習履歴はブラウザの`localStorage`に保存します。
+CollocationとExact Listeningを反復学習する個人用Webアプリです。Collocationは10問、Exact Listeningは1シナリオ7問を1セットとして扱います。バックエンドや認証は使わず、学習履歴はブラウザの`localStorage`に保存します。
 
 ## ローカル起動
 
@@ -35,6 +35,10 @@ npm run preview
 ```text
 src/
   data/collocations.json  # 100問の問題データ
+  data/exact-listening.fixture.json # 開発・テスト用の1シナリオ（7問）
+  data/exact-listening-audio.json   # Gemini音声パスを含むListeningデータ
+  courses.ts              # コース定義とListeningデータ検証
+  listening.ts            # 回答判定・単語差分・ミス分類
   App.tsx                 # 画面とクイズ進行
   lib.ts                  # 定着度・出題・日付などのロジック
   storage.ts              # localStorage、Import / Export
@@ -75,11 +79,32 @@ vite.config.ts
 
 キーはすべて`mylingo`で始まります。
 
-- `mylingo.version`: schema version（現在は`1`）
+- `mylingo.version`: schema version（現在は`2`。version 1は自動移行）
 - `mylingo.progress`: question IDごとの回答回数、正解・不正解、連続正解、正解した日、最終回答、定着度、誤答選択肢
-- `mylingo.dailyHistory`: ローカル日付ごとの完了セット数、回答・正解数、Best、Perfect回数
+- `mylingo.dailyHistory`: ローカル日付ごとの完了セット数、回答・正解数、Best、Perfect回数、およびコース別集計
+- `mylingo.listening`: Exact / Minor spelling / Listening error、機能語ミス、直近回答、完了シナリオ
 
 問題履歴は配列の位置ではなくquestion IDをキーにするため、問題を追加しても既存履歴は維持されます。
+
+## Exact Listeningデータ
+
+本番データは`src/data/exact-listening-audio.json`から読み込みます。現在の生成形式（`sets[].sentences[]`）は`src/courses.ts`でアプリ内部の共通schemaへ変換されます。各setは一意な`id`、`topic`、ちょうど7つの`sentences`を持ち、各sentenceは1〜7の`index`、1〜3の`semanticChunks`、正解英文`text`を持ちます。実音声にはsentenceの`audio`または`audioSrc`を使用し、音声7件が揃ったscenarioだけを学習対象にします。現在はGemini TTSで生成した8scenarioを収録しています。
+
+```json
+{
+  "sets": [{
+    "id": "set_001",
+    "topic": "At the library",
+    "context": "A student asks about borrowing materials.",
+    "sentences": [
+      { "index": 1, "text": "The library closes at nine.", "semanticChunks": 1, "features": ["article", "preposition"] },
+      "... sentences 2 through 7 ..."
+    ]
+  }]
+}
+```
+
+上は構造を示す抜粋です（文字列の省略部分は実データでは7文に置き換えます）。ローダーは起動時にシナリオあたり7問、連番、重複ID、chunk数、タグを検証します。内部の`schemaVersion: 1 / scenarios`形式も読み込めるため、将来データ生成側を共通schemaへ寄せてもUI変更は不要です。
 
 ## masteryScore
 

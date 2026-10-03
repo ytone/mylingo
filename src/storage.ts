@@ -1,20 +1,36 @@
 import { calculateMastery, emptyProgress, localDate } from './lib'
-import type { AppData, DailyRecord, QuestionProgress } from './types'
+import type { AppData, CourseId, DailyRecord, ListeningAnswerRecord, ListeningStats, QuestionProgress } from './types'
 
 export const STORAGE_KEYS = {
   version: 'mylingo.version',
   progress: 'mylingo.progress',
   dailyHistory: 'mylingo.dailyHistory',
+  listening: 'mylingo.listening',
 } as const
 
-const emptyData = (): AppData => ({ version: 1, progress: {}, dailyHistory: {} })
+const emptyListening = (): ListeningStats => ({
+  answered: 0,
+  exact: 0,
+  minorSpellingError: 0,
+  listeningError: 0,
+  setsCompleted: 0,
+  missedTags: { article: 0, preposition: 0, 'plural-s': 0, 'past-tense': 0, auxiliary: 0, other: 0 },
+  recentAnswers: [],
+  completedScenarioIds: [],
+})
+
+const emptyData = (): AppData => ({ version: 2, progress: {}, dailyHistory: {}, listening: emptyListening() })
 
 export function loadData(): AppData {
   try {
     const progress = JSON.parse(localStorage.getItem(STORAGE_KEYS.progress) ?? '{}')
     const dailyHistory = JSON.parse(localStorage.getItem(STORAGE_KEYS.dailyHistory) ?? '{}')
+    const storedListening = JSON.parse(localStorage.getItem(STORAGE_KEYS.listening) ?? 'null')
     if (typeof progress !== 'object' || Array.isArray(progress) || typeof dailyHistory !== 'object' || Array.isArray(dailyHistory)) return emptyData()
-    return { version: 1, progress, dailyHistory }
+    const listening = storedListening && typeof storedListening === 'object' && !Array.isArray(storedListening)
+      ? { ...emptyListening(), ...storedListening, missedTags: { ...emptyListening().missedTags, ...storedListening.missedTags } }
+      : emptyListening()
+    return { version: 2, progress, dailyHistory, listening }
   } catch {
     return emptyData()
   }
@@ -24,6 +40,7 @@ export function saveData(data: AppData): void {
   localStorage.setItem(STORAGE_KEYS.version, String(data.version))
   localStorage.setItem(STORAGE_KEYS.progress, JSON.stringify(data.progress))
   localStorage.setItem(STORAGE_KEYS.dailyHistory, JSON.stringify(data.dailyHistory))
+  localStorage.setItem(STORAGE_KEYS.listening, JSON.stringify(data.listening))
 }
 
 export function recordAnswer(data: AppData, questionId: number, selected: string, answer: string): AppData {
@@ -55,7 +72,7 @@ export function recordAnswer(data: AppData, questionId: number, selected: string
   return next
 }
 
-export function completeSet(data: AppData, score: number, total: number): AppData {
+export function completeSet(data: AppData, score: number, total: number, courseId: CourseId = 'collocation'): AppData {
   const date = localDate()
   const existing: DailyRecord = data.dailyHistory[date] ?? {
     setsCompleted: 0,
@@ -65,7 +82,7 @@ export function completeSet(data: AppData, score: number, total: number): AppDat
     perfectSets: 0,
     achievedDailyPerfect: false,
   }
-  const perfect = score === total && total === 10
+  const perfect = courseId === 'collocation' && score === total
   const updated: DailyRecord = {
     setsCompleted: existing.setsCompleted + 1,
     answered: existing.answered + total,
@@ -73,8 +90,46 @@ export function completeSet(data: AppData, score: number, total: number): AppDat
     bestScore: Math.max(existing.bestScore, score),
     perfectSets: existing.perfectSets + (perfect ? 1 : 0),
     achievedDailyPerfect: existing.achievedDailyPerfect || perfect,
+    byCourse: {
+      ...existing.byCourse,
+      [courseId]: {
+        setsCompleted: (existing.byCourse?.[courseId]?.setsCompleted ?? 0) + 1,
+        answered: (existing.byCourse?.[courseId]?.answered ?? 0) + total,
+        exact: (existing.byCourse?.[courseId]?.exact ?? 0) + score,
+        bestScore: Math.max(existing.byCourse?.[courseId]?.bestScore ?? 0, score),
+      },
+    },
   }
   const next = { ...data, dailyHistory: { ...data.dailyHistory, [date]: updated } }
+  saveData(next)
+  return next
+}
+
+export function recordListeningAnswer(data: AppData, answer: ListeningAnswerRecord): AppData {
+  const missedTags = { ...data.listening.missedTags }
+  for (const tag of answer.missedTags) missedTags[tag] += 1
+  const listening: ListeningStats = {
+    ...data.listening,
+    answered: data.listening.answered + 1,
+    exact: data.listening.exact + Number(answer.assessment === 'exact'),
+    minorSpellingError: data.listening.minorSpellingError + Number(answer.assessment === 'minor_spelling_error'),
+    listeningError: data.listening.listeningError + Number(answer.assessment === 'listening_error'),
+    missedTags,
+    recentAnswers: [...data.listening.recentAnswers, answer].slice(-100),
+  }
+  const next = { ...data, listening }
+  saveData(next)
+  return next
+}
+
+export function completeListeningScenario(data: AppData, scenarioId: string, exactCount: number, total: number): AppData {
+  const withSet = completeSet(data, exactCount, total, 'exact-listening')
+  const listening = {
+    ...withSet.listening,
+    setsCompleted: withSet.listening.setsCompleted + 1,
+    completedScenarioIds: [...new Set([...withSet.listening.completedScenarioIds, scenarioId])],
+  }
+  const next = { ...withSet, listening }
   saveData(next)
   return next
 }
@@ -118,7 +173,7 @@ export function exportData(data: AppData): void {
 export function validateImport(value: unknown): AppData {
   if (!value || typeof value !== 'object') throw new Error('JSONの形式が正しくありません。')
   const candidate = value as Partial<AppData>
-  if (candidate.version !== 1 || !candidate.progress || !candidate.dailyHistory || Array.isArray(candidate.progress) || Array.isArray(candidate.dailyHistory)) {
+  if (![1, 2].includes(Number(candidate.version)) || !candidate.progress || !candidate.dailyHistory || Array.isArray(candidate.progress) || Array.isArray(candidate.dailyHistory)) {
     throw new Error('対応していないバックアップ形式です。')
   }
   for (const [id, item] of Object.entries(candidate.progress)) {
@@ -133,7 +188,10 @@ export function validateImport(value: unknown): AppData {
       throw new Error(`${date} の日別履歴が正しくありません。`)
     }
   }
-  return candidate as AppData
+  const listening = candidate.listening && typeof candidate.listening === 'object'
+    ? { ...emptyListening(), ...candidate.listening, missedTags: { ...emptyListening().missedTags, ...candidate.listening.missedTags } }
+    : emptyListening()
+  return { version: 2, progress: candidate.progress, dailyHistory: candidate.dailyHistory, listening } as AppData
 }
 
 export function resetData(): AppData {

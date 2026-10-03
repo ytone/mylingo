@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    {
+      "id": "fixture-campus-library",
+      "title": "At the campus library",
+      "context": "A student asks a librarian about borrowing materials.",
+      "questions": [
+        { "id": "fixture-campus-library-01", "order": 1, "chunkCount": 1, "text": "I need a quiet place to study.", "focusTags": ["article", "preposition"] },
+        { "id": "fixture-campus-library-02", "order": 2, "chunkCount": 1, "text": "The library closes at nine.", "focusTags": ["article", "preposition"] },
+        { "id": "fixture-campus-library-03", "order": 3, "chunkCount": 2, "text": "You can borrow the book for two weeks.", "focusTags": ["article", "preposition"] },
+        { "id": "fixture-campus-library-04", "order": 4, "chunkCount": 2, "text": "I have already returned the other books.", "focusTags": ["auxiliary", "article", "plural-s", "past-tense"] },
+        { "id": "fixture-campus-library-05", "order": 5, "chunkCount": 2, "text": "Do I need to renew it online?", "focusTags": ["auxiliary", "preposition"] },
+        { "id": "fixture-campus-library-06", "order": 6, "chunkCount": 3, "text": "If the book is available, you can pick it up at the front desk.", "focusTags": ["article", "preposition", "auxiliary"] },
+        { "id": "fixture-campus-library-07", "order": 7, "chunkCount": 3, "text": "Students who return books late may have to pay a small fee.", "focusTags": ["plural-s", "preposition", "article", "auxiliary"] }
+      ]
+    }
+  ]
+}

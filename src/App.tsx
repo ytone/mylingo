@@ -1,14 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import rawQuestions from './data/collocations.json'
+import { COURSES, listeningDataset } from './courses'
 import { displayChoice, emptyProgress, localDate, masteryLevel, selectQuestions, shuffle } from './lib'
-import { completeSet, exportData, loadData, recordAnswer, resetData, saveData, streak, validateImport } from './storage'
-import type { AppData, Category, MasteryLevel, Question, QuizMode } from './types'
+import { evaluateListeningAnswer, wordDiff } from './listening'
+import type { ListeningEvaluation } from './listening'
+import { completeListeningScenario, completeSet, exportData, loadData, recordAnswer, recordListeningAnswer, resetData, saveData, streak, validateImport } from './storage'
+import type { AppData, Category, ListeningAssessment, ListeningQuestion, ListeningScenario, MasteryLevel, Question, QuizMode } from './types'
 import { CATEGORY_LABELS, MASTERY_LABELS } from './types'
 
 const questions = rawQuestions as Question[]
-type Screen = 'home' | 'quiz' | 'result' | 'questions' | 'detail' | 'settings'
+type Screen = 'home' | 'quiz' | 'result' | 'listening' | 'listening-result' | 'questions' | 'detail' | 'settings'
 
 interface AnswerResult { question: Question; selected: string; correct: boolean }
+interface ListeningResult { question: ListeningQuestion; answer: string; evaluation: ListeningEvaluation }
 
 const formatPercent = (correct: number, total: number) => total ? `${Math.round(correct / total * 100)}%` : '—'
 const shortDate = (value: string | null) => value ? new Intl.DateTimeFormat('ja-JP', { month: 'short', day: 'numeric' }).format(new Date(value)) : '未回答'
@@ -22,6 +26,10 @@ export default function App() {
   const [selected, setSelected] = useState<string | null>(null)
   const [answers, setAnswers] = useState<AnswerResult[]>([])
   const [detailId, setDetailId] = useState<number | null>(null)
+  const [scenario, setScenario] = useState<ListeningScenario>(() => listeningDataset.scenarios[0])
+  const [listeningIndex, setListeningIndex] = useState(0)
+  const [listeningAnswers, setListeningAnswers] = useState<ListeningResult[]>([])
+  const [listeningFeedback, setListeningFeedback] = useState<ListeningResult | null>(null)
 
   const navigate = (next: Screen) => {
     setScreen(next)
@@ -29,7 +37,7 @@ export default function App() {
   }
 
   const startQuiz = (nextMode: Exclude<QuizMode, 'review'>, category?: Category) => {
-    const picked = selectQuestions(questions, data.progress, nextMode, category)
+    const picked = selectQuestions(questions, data.progress, nextMode, category, COURSES.collocation.questionsPerSet)
     setQuiz(picked)
     setMode(nextMode)
     setIndex(0)
@@ -78,9 +86,49 @@ export default function App() {
     navigate('detail')
   }
 
+  const startListening = () => {
+    const next = listeningDataset.scenarios.find((item) => !data.listening.completedScenarioIds.includes(item.id)) ?? listeningDataset.scenarios[0]
+    setScenario(next)
+    setListeningIndex(0)
+    setListeningAnswers([])
+    setListeningFeedback(null)
+    navigate('listening')
+  }
+
+  const submitListening = (answer: string) => {
+    if (listeningFeedback) return
+    const question = scenario.questions[listeningIndex]
+    const evaluation = evaluateListeningAnswer(answer, question)
+    const result = { question, answer, evaluation }
+    setListeningAnswers((previous) => [...previous, result])
+    setListeningFeedback(result)
+    setData((previous) => recordListeningAnswer(previous, {
+      questionId: question.id,
+      scenarioId: scenario.id,
+      answer,
+      expected: question.text,
+      assessment: evaluation.assessment,
+      missedTags: evaluation.missedTags,
+      answeredAt: new Date().toISOString(),
+    }))
+  }
+
+  const nextListening = () => {
+    if (!listeningFeedback) return
+    if (listeningIndex < scenario.questions.length - 1) {
+      setListeningIndex((value) => value + 1)
+      setListeningFeedback(null)
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+    const exact = listeningAnswers.filter((answer) => answer.evaluation.assessment === 'exact').length
+    setData((previous) => completeListeningScenario(previous, scenario.id, exact, scenario.questions.length))
+    navigate('listening-result')
+  }
+
   return (
     <div className="app-shell">
-      {screen !== 'quiz' && (
+      {screen !== 'quiz' && screen !== 'listening' && (
         <header className="site-header">
           <button className="wordmark" onClick={() => navigate('home')} aria-label="ホームへ">mylingo<span>.</span></button>
           <nav aria-label="メインナビゲーション">
@@ -90,8 +138,8 @@ export default function App() {
         </header>
       )}
 
-      <main className={screen === 'quiz' ? 'quiz-main' : ''}>
-        {screen === 'home' && <Dashboard data={data} onStart={startQuiz} onNavigate={navigate} />}
+      <main className={screen === 'quiz' || screen === 'listening' ? 'quiz-main' : ''}>
+        {screen === 'home' && <Dashboard data={data} onStart={startQuiz} onStartListening={startListening} onNavigate={navigate} />}
         {screen === 'quiz' && quiz[index] && (
           <QuizView
             question={quiz[index]}
@@ -103,6 +151,18 @@ export default function App() {
             onExit={() => navigate('home')}
           />
         )}
+        {screen === 'listening' && (
+          <ListeningView
+            scenario={scenario}
+            question={scenario.questions[listeningIndex]}
+            current={listeningIndex + 1}
+            feedback={listeningFeedback}
+            onSubmit={submitListening}
+            onNext={nextListening}
+            onExit={() => navigate('home')}
+          />
+        )}
+        {screen === 'listening-result' && <ListeningResultView answers={listeningAnswers} setsToday={data.dailyHistory[localDate()]?.setsCompleted ?? 0} onAgain={startListening} onHome={() => navigate('home')} />}
         {screen === 'result' && (
           <ResultView
             answers={answers}
@@ -117,26 +177,38 @@ export default function App() {
         {screen === 'detail' && detailId !== null && <QuestionDetail id={detailId} data={data} onBack={() => navigate('questions')} />}
         {screen === 'settings' && <Settings data={data} setData={setData} />}
       </main>
-      {screen !== 'quiz' && <footer>Small steps, stronger English.</footer>}
+      {screen !== 'quiz' && screen !== 'listening' && <footer>Small steps, stronger English.</footer>}
     </div>
   )
 }
 
-function Dashboard({ data, onStart, onNavigate }: {
+function Dashboard({ data, onStart, onStartListening, onNavigate }: {
   data: AppData
   onStart: (mode: 'normal' | 'weak' | 'all' | 'category', category?: Category) => void
+  onStartListening: () => void
   onNavigate: (screen: Screen) => void
 }) {
   const today = data.dailyHistory[localDate()]
   const learningStreak = streak(data.dailyHistory, 'learning')
   const perfectStreak = streak(data.dailyHistory, 'perfect')
-  const totals = Object.values(data.dailyHistory).reduce((acc, day) => ({ answered: acc.answered + day.answered, correct: acc.correct + day.correct }), { answered: 0, correct: 0 })
+  const totals = Object.values(data.dailyHistory).reduce((acc, day) => {
+    const collocation = day.byCourse?.collocation
+    return {
+      answered: acc.answered + (collocation?.answered ?? (!day.byCourse ? day.answered : 0)),
+      correct: acc.correct + (collocation?.exact ?? (!day.byCourse ? day.correct : 0)),
+    }
+  }, { answered: 0, correct: 0 })
   const levels = questions.reduce<Record<MasteryLevel, number>>((acc, question) => {
     const p = data.progress[question.id]
     acc[masteryLevel(p?.masteryScore ?? 0, p?.attempts ?? 0)] += 1
     return acc
   }, { unlearned: 0, review: 0, learning: 0, almost: 0, mastered: 0 })
   const [showModes, setShowModes] = useState(false)
+  const listeningExactRate = formatPercent(data.listening.exact, data.listening.answered)
+  const missedTags = Object.entries(data.listening.missedTags).filter(([, count]) => count > 0).sort((a, b) => b[1] - a[1]).slice(0, 4)
+  const collocationToday = today?.byCourse?.collocation
+  const collocationAnswered = collocationToday?.answered ?? (!today?.byCourse ? today?.answered ?? 0 : 0)
+  const collocationCorrect = collocationToday?.exact ?? (!today?.byCourse ? today?.correct ?? 0 : 0)
 
   return (
     <>
@@ -145,24 +217,31 @@ function Dashboard({ data, onStart, onNavigate }: {
           <p className="eyebrow">今日の目標</p>
           {today?.achievedDailyPerfect
             ? <h1><span className="goal-icon">✓</span> 今日の目標達成</h1>
-            : <h1>10/10を1回達成する</h1>}
-          <p>{today?.perfectSets ? `Perfect × ${today.perfectSets}` : '今日の最初の10問を始めましょう'}</p>
+            : <h1>{COURSES.collocation.questionsPerSet}/{COURSES.collocation.questionsPerSet}を1回達成する</h1>}
+          <p>{today?.perfectSets ? `Perfect × ${today.perfectSets}` : `今日の最初の${COURSES.collocation.questionsPerSet}問を始めましょう`}</p>
         </div>
-        <div className="goal-mark" aria-hidden="true">10<span>/10</span></div>
+        <div className="goal-mark" aria-hidden="true">{COURSES.collocation.questionsPerSet}<span>/{COURSES.collocation.questionsPerSet}</span></div>
       </section>
 
-      <button className="primary-cta" onClick={() => onStart('normal')}>
-        <span>10問スタート</span><span aria-hidden="true">→</span>
-      </button>
+      <section className="course-grid" aria-label="コースを選ぶ">
+        <button className="course-card collocation-card" onClick={() => onStart('normal')}><span className="course-kicker">COLLOCATION</span><strong>10問スタート</strong><small>4択で表現を定着</small><b aria-hidden="true">→</b></button>
+        <button className="course-card listening-card" onClick={onStartListening}><span className="course-kicker">EXACT LISTENING</span><strong>7問スタート</strong><small>1 scenario / Exact率 {listeningExactRate}</small><b aria-hidden="true">→</b></button>
+      </section>
 
       <section className="section-block">
         <div className="section-heading"><div><p className="eyebrow">TODAY</p><h2>今日の学習</h2></div><span className="date-label">{new Intl.DateTimeFormat('ja-JP', { month: 'long', day: 'numeric', weekday: 'short' }).format(new Date())}</span></div>
         <div className="stat-grid today-stats">
           <Stat value={today?.setsCompleted ?? 0} label="セット" />
-          <Stat value={`${today?.bestScore ?? 0} / 10`} label="Best" />
-          <Stat value={formatPercent(today?.correct ?? 0, today?.answered ?? 0)} label={`${today?.correct ?? 0} / ${today?.answered ?? 0} 正解`} />
+          <Stat value={`${collocationToday?.bestScore ?? (!today?.byCourse ? today?.bestScore ?? 0 : 0)} / ${COURSES.collocation.questionsPerSet}`} label="Collocation Best" />
+          <Stat value={formatPercent(collocationCorrect, collocationAnswered)} label={`${collocationCorrect} / ${collocationAnswered} Collocation`} />
           <Stat value={today?.perfectSets ?? 0} label="Perfect" accent />
         </div>
+      </section>
+
+      <section className="section-block listening-overview">
+        <div className="section-heading"><div><p className="eyebrow">EXACT LISTENING</p><h2>聞き取りの記録</h2></div><span className="date-label">{data.listening.setsCompleted} scenarios</span></div>
+        <div className="stat-grid"><Stat value={data.listening.answered} label="回答"/><Stat value={listeningExactRate} label="Exact率"/><Stat value={data.listening.minorSpellingError} label="Minor spelling"/><Stat value={data.listening.listeningError} label="Listening error"/></div>
+        {missedTags.length > 0 && <div className="weakness-row"><span>聞き逃し傾向</span>{missedTags.map(([tag, count]) => <b key={tag}>{tag} <em>{count}</em></b>)}</div>}
       </section>
 
       <section className="streak-grid">
@@ -225,6 +304,154 @@ function Calendar({ history }: { history: AppData['dailyHistory'] }) {
       return <span key={date} className={`calendar-day level-${level}`} title={`${date}: ${record?.setsCompleted ?? 0}セット`} aria-label={`${date} ${record?.setsCompleted ?? 0}セット`}>{record?.achievedDailyPerfect ? '★' : ''}</span>
     })}</div>
     <div className="calendar-key"><span>少ない</span><i className="level-0"/><i className="level-1"/><i className="level-2"/><i className="level-3"/><span>多い</span></div>
+  </section>
+}
+
+const ASSESSMENT_LABELS: Record<ListeningAssessment, string> = {
+  exact: 'Exact',
+  minor_spelling_error: 'Minor spelling error',
+  listening_error: 'Listening error',
+}
+
+function ListeningView({ scenario, question, current, feedback, onSubmit, onNext, onExit }: {
+  scenario: ListeningScenario
+  question: ListeningQuestion
+  current: number
+  feedback: ListeningResult | null
+  onSubmit: (answer: string) => void
+  onNext: () => void
+  onExit: () => void
+}) {
+  const [answer, setAnswer] = useState('')
+  const [audioError, setAudioError] = useState('')
+  const [playbackRate, setPlaybackRate] = useState(1)
+  const speechRef = useRef<SpeechSynthesisUtterance | null>(null)
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+  const autoPlayTimerRef = useRef<number | null>(null)
+  const hasShownFirstQuestionRef = useRef(false)
+  const total = COURSES['exact-listening'].questionsPerSet
+
+  useEffect(() => {
+    audioRef.current?.pause()
+    audioRef.current = null
+    setAnswer('')
+    setAudioError('')
+  }, [question.id])
+  useEffect(() => () => {
+    if (autoPlayTimerRef.current !== null) window.clearTimeout(autoPlayTimerRef.current)
+    audioRef.current?.pause()
+    window.speechSynthesis?.cancel()
+  }, [])
+  useEffect(() => {
+    const handler = (event: KeyboardEvent) => {
+      if (event.key === 'Enter' && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault()
+        if (feedback) onNext()
+        else if (answer.trim()) onSubmit(answer)
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [answer, feedback, onNext, onSubmit])
+
+  const playAudio = () => {
+    if (autoPlayTimerRef.current !== null) {
+      window.clearTimeout(autoPlayTimerRef.current)
+      autoPlayTimerRef.current = null
+    }
+    setAudioError('')
+    if (question.audioSrc) {
+      audioRef.current?.pause()
+      const audio = new Audio(question.audioSrc)
+      audio.playbackRate = playbackRate
+      audioRef.current = audio
+      void audio.play().catch(() => setAudioError('音声を再生できませんでした。Chromeのサイト音声設定も確認してください。'))
+      return
+    }
+    if (!('speechSynthesis' in window)) { setAudioError('このブラウザは音声読み上げに対応していません。'); return }
+    const synthesis = window.speechSynthesis
+    synthesis.cancel()
+    const utterance = new SpeechSynthesisUtterance(question.text)
+    utterance.lang = 'en-US'
+    utterance.rate = playbackRate
+    utterance.volume = 1
+    const voices = synthesis.getVoices()
+    utterance.voice = voices.find((voice) => voice.lang === 'en-US' && voice.localService)
+      ?? voices.find((voice) => voice.lang === 'en-US')
+      ?? voices.find((voice) => voice.lang.startsWith('en'))
+      ?? null
+    utterance.onerror = () => setAudioError('音声を再生できませんでした。Chromeのタブがミュートになっていないか確認してください。')
+    utterance.onend = () => { speechRef.current = null }
+    speechRef.current = utterance
+    synthesis.resume()
+    synthesis.speak(utterance)
+  }
+
+  useEffect(() => {
+    if (!hasShownFirstQuestionRef.current) {
+      hasShownFirstQuestionRef.current = true
+      return
+    }
+    autoPlayTimerRef.current = window.setTimeout(() => {
+      autoPlayTimerRef.current = null
+      playAudio()
+    }, 1000)
+    return () => {
+      if (autoPlayTimerRef.current !== null) {
+        window.clearTimeout(autoPlayTimerRef.current)
+        autoPlayTimerRef.current = null
+      }
+    }
+  // The next question is the only event that should schedule autoplay.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [question.id])
+
+  const parts = feedback ? wordDiff(feedback.answer, question.text) : []
+  return <div className="quiz-wrap listening-wrap">
+    <header className="quiz-header"><button onClick={onExit} aria-label="リスニングを終了">×</button><div className="quiz-progress"><span style={{ width: `${current / total * 100}%` }} /></div><strong>{current}<span> / {total}</span></strong></header>
+    <article className="quiz-card listening-card-view">
+      <p className="category-chip">EXACT LISTENING · {question.chunkCount} CHUNK{question.chunkCount > 1 ? 'S' : ''}</p>
+      <p className="scenario-label">{scenario.title}</p>
+      <h1>聞こえた英文を<br/>正確に入力してください。</h1>
+      <div className="audio-controls">
+        <button className="audio-button" onClick={playAudio}><span aria-hidden="true">▶</span><strong>音声を再生</strong><small>{question.audioSrc ? 'AI-generated voice · Listen again as needed' : 'Browser voice'}</small></button>
+        <div className="speed-control" aria-label="再生速度">
+          <span>再生速度</span>
+          {[0.75, 0.9, 1, 1.15].map((rate) => <button key={rate} className={playbackRate === rate ? 'active' : ''} aria-pressed={playbackRate === rate} onClick={() => setPlaybackRate(rate)}>{rate}×</button>)}
+        </div>
+      </div>
+      {audioError && <p className="audio-error" role="alert">{audioError}</p>}
+      <form onSubmit={(event) => { event.preventDefault(); if (answer.trim() && !feedback) onSubmit(answer) }}>
+        <label htmlFor="listening-answer">Your answer</label>
+        <textarea id="listening-answer" value={answer} onChange={(event) => setAnswer(event.target.value)} disabled={Boolean(feedback)} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Type exactly what you hear…" autoFocus />
+        {!feedback && <button className="next-button" disabled={!answer.trim()} type="submit">Submit <span>⌘↵</span></button>}
+      </form>
+      {feedback && <div className={`listening-feedback ${feedback.evaluation.assessment}`} aria-live="polite">
+        <div className="assessment-head"><span>{ASSESSMENT_LABELS[feedback.evaluation.assessment]}</span><strong>{feedback.evaluation.assessment === 'exact' ? '✓' : feedback.evaluation.assessment === 'minor_spelling_error' ? '△' : '!'}</strong></div>
+        <div className="diff-box"><span>Correct answer</span><p>{parts.map((part, index) => <mark key={`${part.kind}-${index}`} className={part.kind}>{part.value}</mark>)}</p></div>
+        {feedback.evaluation.missedTags.length > 0 && <div className="missed-tags"><span>見逃し傾向</span>{feedback.evaluation.missedTags.map((tag) => <b key={tag}>{tag}</b>)}</div>}
+      </div>}
+      {feedback && <button className="next-button" onClick={onNext}>{current === total ? 'Scenario Complete' : '次へ'} <span>⌘↵</span></button>}
+    </article>
+  </div>
+}
+
+function ListeningResultView({ answers, setsToday, onAgain, onHome }: {
+  answers: ListeningResult[]
+  setsToday: number
+  onAgain: () => void
+  onHome: () => void
+}) {
+  const exact = answers.filter((answer) => answer.evaluation.assessment === 'exact').length
+  const minor = answers.filter((answer) => answer.evaluation.assessment === 'minor_spelling_error').length
+  return <section className="result-card">
+    <div className={`result-ring ${exact === answers.length ? 'perfect' : ''}`}><strong>{exact}</strong><span>/ {answers.length}</span></div>
+    <p className="eyebrow">SCENARIO COMPLETE</p>
+    <h1>{exact === answers.length ? 'Exact!' : '1シナリオ完了'}</h1>
+    <p>今日は合計 {setsToday}セット完了しました</p>
+    <div className="result-summary"><div><span>Exact</span><strong>{exact}</strong></div><div><span>Minor spelling</span><strong>{minor}</strong></div><div><span>Listening error</span><strong>{answers.length - exact - minor}</strong></div></div>
+    <button className="primary-cta" onClick={onAgain}><span>次の7問をやる</span><span>→</span></button>
+    <button className="text-button home-link" onClick={onHome}>ホームに戻る</button>
   </section>
 }
 
@@ -302,14 +529,14 @@ function ResultView({ answers, isReview, setsToday, onAgain, onReview, onHome }:
 }) {
   const score = answers.filter((answer) => answer.correct).length
   const missed = answers.filter((answer) => !answer.correct)
-  const perfect = score === answers.length && answers.length === 10
+  const perfect = score === answers.length && answers.length === COURSES.collocation.questionsPerSet
   return <section className="result-card">
     <div className={`result-ring ${perfect ? 'perfect' : ''}`}><strong>{score}</strong><span>/ {answers.length}</span></div>
     <p className="eyebrow">{isReview ? 'REVIEW COMPLETE' : 'SET COMPLETE'}</p>
     <h1>{perfect ? 'Perfect!' : isReview ? '復習完了' : '1セット完了'}</h1>
     <p>{isReview ? `${score}問正解しました` : `今日は ${setsToday}セット完了しました`}</p>
     <div className="result-summary"><div><span>正解</span><strong>{score}</strong></div><div><span>もう一度</span><strong>{missed.length}</strong></div><div><span>正答率</span><strong>{formatPercent(score, answers.length)}</strong></div></div>
-    <button className="primary-cta" onClick={onAgain}>もう10問やる <span>→</span></button>
+    <button className="primary-cta" onClick={onAgain}>もう{COURSES.collocation.questionsPerSet}問やる <span>→</span></button>
     {missed.length > 0 && <button className="secondary-button" onClick={onReview}>間違えた{missed.length}問を復習</button>}
     <button className="text-button home-link" onClick={onHome}>ホームに戻る</button>
   </section>

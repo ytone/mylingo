@@ -70,15 +70,16 @@ export function selectQuestions(
   progress: Record<string, QuestionProgress>,
   mode: 'normal' | 'weak' | 'all' | 'category',
   category?: string,
+  setSize = 10,
 ): Question[] {
   const pool = category ? questions.filter((q) => q.category === category) : questions
-  if (mode === 'all' || mode === 'category') return shuffle(pool).slice(0, 10)
+  if (mode === 'all' || mode === 'category') return shuffle(pool).slice(0, setSize)
 
   const ranked = [...pool].sort((a, b) => weakness(b, progress) - weakness(a, progress))
   if (mode === 'weak') {
     const mistaken = ranked.filter((q) => (progress[q.id]?.incorrect ?? 0) > 0)
-    const candidates = mistaken.length >= 10 ? mistaken : [...mistaken, ...ranked.filter((q) => !mistaken.includes(q))]
-    return candidates.slice(0, 10)
+    const candidates = mistaken.length >= setSize ? mistaken : [...mistaken, ...ranked.filter((q) => !mistaken.includes(q))]
+    return candidates.slice(0, setSize)
   }
 
   const weak = ranked.filter((q) => {
@@ -90,10 +91,12 @@ export function selectQuestions(
     return p && p.masteryScore >= 40 && p.masteryScore < 80
   })
   const variety = shuffle(ranked.filter((q) => !weak.includes(q) && !learning.includes(q)))
-  const picked = [...weak.slice(0, 5), ...learning.slice(0, 3), ...variety.slice(0, 2)]
+  const weakCount = Math.ceil(setSize * 0.5)
+  const learningCount = Math.floor(setSize * 0.3)
+  const picked = [...weak.slice(0, weakCount), ...learning.slice(0, learningCount), ...variety.slice(0, Math.max(0, setSize - weakCount - learningCount))]
   for (const question of ranked) {
-    if (picked.length >= Math.min(10, pool.length)) break
+    if (picked.length >= Math.min(setSize, pool.length)) break
     if (!picked.includes(question)) picked.push(question)
   }
-  return shuffle(picked.slice(0, 10))
+  return shuffle(picked.slice(0, setSize))
 }
