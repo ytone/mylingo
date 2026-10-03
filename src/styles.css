@@ -139,6 +139,7 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 45px; color: #96998f
 .listening-feedback.minor_spelling_error { background: #f6f0df; border-color: #c4943c; }
 .assessment-head { display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: #9a4d2d; }.exact .assessment-head { color: var(--green); }.minor_spelling_error .assessment-head { color: #8a671f; }
 .assessment-head strong { font-size: 22px; }
+.score-detail { display: flex; gap: 14px; margin-top: 8px; color: var(--muted); font-size: 11px; }
 .diff-box { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(70,80,68,.14); }.diff-box > span, .missed-tags > span { display: block; margin-bottom: 7px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .diff-box p { margin: 0; font-size: 16px; line-height: 1.8; }.diff-box mark { display: inline; margin-right: .28em; padding: 2px 3px; border-radius: 3px; background: transparent; }.diff-box mark.missing { background: #f7cdbb; color: #8b3e21; text-decoration: underline; }.diff-box mark.extra { background: #eee0b8; color: #80631d; text-decoration: line-through; }
 .missed-tags { margin-top: 14px; }.missed-tags b { display: inline-block; margin: 0 6px 6px 0; padding: 5px 8px; border-radius: 20px; background: rgba(255,255,255,.65); font-size: 10px; }
@@ -147,6 +148,7 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 45px; color: #96998f
 .result-card { width: min(100%, 600px); margin: 22px auto 0; text-align: center; }
 .result-ring { width: 145px; height: 145px; margin: 0 auto 25px; border: 8px solid #d5a16c; border-radius: 50%; display: flex; justify-content: center; align-items: baseline; padding-top: 38px; }
 .result-ring.perfect { border-color: var(--green); }.result-ring strong { font-size: 48px; letter-spacing: -.06em; }.result-ring span { margin-left: 5px; color: var(--muted); }
+.listening-score-ring { width: 165px; height: 165px; padding-top: 45px; }.listening-score-ring strong { font-size: 45px; }
 .result-card h1 { font-size: 36px; margin: 0 0 7px; letter-spacing: -.04em; }.result-card > p:not(.eyebrow) { color: var(--muted); margin: 0; }
 .result-summary { margin: 32px 0; display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 10px; background: white; }
 .result-summary div { padding: 20px; border-right: 1px solid var(--line); display: flex; flex-direction: column; }.result-summary div:last-child { border: 0; }.result-summary span { font-size: 11px; color: var(--muted); }.result-summary strong { font-size: 21px; margin-top: 4px; }

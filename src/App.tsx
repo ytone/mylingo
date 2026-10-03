@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import rawQuestions from './data/collocations.json'
 import { COURSES, listeningDataset } from './courses'
 import { displayChoice, emptyProgress, localDate, masteryLevel, selectQuestions, shuffle } from './lib'
-import { evaluateListeningAnswer, wordDiff } from './listening'
+import { calculateListeningScore, evaluateListeningAnswer, LISTENING_POINTS_PER_QUESTION, wordDiff } from './listening'
 import type { ListeningEvaluation } from './listening'
 import { completeListeningScenario, completeSet, exportData, loadData, recordAnswer, recordListeningAnswer, resetData, saveData, streak, validateImport } from './storage'
 import type { AppData, Category, ListeningAssessment, ListeningQuestion, ListeningScenario, MasteryLevel, Question, QuizMode } from './types'
@@ -12,7 +12,7 @@ const questions = rawQuestions as Question[]
 type Screen = 'home' | 'quiz' | 'result' | 'listening' | 'listening-result' | 'questions' | 'detail' | 'settings'
 
 interface AnswerResult { question: Question; selected: string; correct: boolean }
-interface ListeningResult { question: ListeningQuestion; answer: string; evaluation: ListeningEvaluation }
+interface ListeningResult { question: ListeningQuestion; answer: string; evaluation: ListeningEvaluation; playCount: number; replayMultiplier: number; points: number }
 
 const formatPercent = (correct: number, total: number) => total ? `${Math.round(correct / total * 100)}%` : '—'
 const shortDate = (value: string | null) => value ? new Intl.DateTimeFormat('ja-JP', { month: 'short', day: 'numeric' }).format(new Date(value)) : '未回答'
@@ -95,11 +95,12 @@ export default function App() {
     navigate('listening')
   }
 
-  const submitListening = (answer: string) => {
+  const submitListening = (answer: string, playCount: number) => {
     if (listeningFeedback) return
     const question = scenario.questions[listeningIndex]
     const evaluation = evaluateListeningAnswer(answer, question)
-    const result = { question, answer, evaluation }
+    const score = calculateListeningScore(evaluation, playCount)
+    const result = { question, answer, evaluation, ...score }
     setListeningAnswers((previous) => [...previous, result])
     setListeningFeedback(result)
     setData((previous) => recordListeningAnswer(previous, {
@@ -109,6 +110,9 @@ export default function App() {
       expected: question.text,
       assessment: evaluation.assessment,
       missedTags: evaluation.missedTags,
+      accuracy: evaluation.accuracy,
+      playCount: score.playCount,
+      score: score.points,
       answeredAt: new Date().toISOString(),
     }))
   }
@@ -122,7 +126,8 @@ export default function App() {
       return
     }
     const exact = listeningAnswers.filter((answer) => answer.evaluation.assessment === 'exact').length
-    setData((previous) => completeListeningScenario(previous, scenario.id, exact, scenario.questions.length))
+    const score = Math.round(listeningAnswers.reduce((sum, answer) => sum + answer.points, 0))
+    setData((previous) => completeListeningScenario(previous, scenario.id, exact, scenario.questions.length, score))
     navigate('listening-result')
   }
 
@@ -318,13 +323,14 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
   question: ListeningQuestion
   current: number
   feedback: ListeningResult | null
-  onSubmit: (answer: string) => void
+  onSubmit: (answer: string, playCount: number) => void
   onNext: () => void
   onExit: () => void
 }) {
   const [answer, setAnswer] = useState('')
   const [audioError, setAudioError] = useState('')
   const [playbackRate, setPlaybackRate] = useState(1)
+  const [playCount, setPlayCount] = useState(0)
   const speechRef = useRef<SpeechSynthesisUtterance | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const autoPlayTimerRef = useRef<number | null>(null)
@@ -336,6 +342,7 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
     audioRef.current = null
     setAnswer('')
     setAudioError('')
+    setPlayCount(0)
   }, [question.id])
   useEffect(() => () => {
     if (autoPlayTimerRef.current !== null) window.clearTimeout(autoPlayTimerRef.current)
@@ -347,12 +354,12 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
       if (event.key === 'Enter' && (event.metaKey || event.ctrlKey)) {
         event.preventDefault()
         if (feedback) onNext()
-        else if (answer.trim()) onSubmit(answer)
+        else if (answer.trim()) onSubmit(answer, playCount)
       }
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
-  }, [answer, feedback, onNext, onSubmit])
+  }, [answer, feedback, onNext, onSubmit, playCount])
 
   const playAudio = () => {
     if (autoPlayTimerRef.current !== null) {
@@ -360,15 +367,23 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
       autoPlayTimerRef.current = null
     }
     setAudioError('')
+    setPlayCount((count) => count + 1)
     if (question.audioSrc) {
       audioRef.current?.pause()
       const audio = new Audio(question.audioSrc)
       audio.playbackRate = playbackRate
       audioRef.current = audio
-      void audio.play().catch(() => setAudioError('音声を再生できませんでした。Chromeのサイト音声設定も確認してください。'))
+      void audio.play().catch(() => {
+        setPlayCount((count) => Math.max(0, count - 1))
+        setAudioError('音声を再生できませんでした。Chromeのサイト音声設定も確認してください。')
+      })
       return
     }
-    if (!('speechSynthesis' in window)) { setAudioError('このブラウザは音声読み上げに対応していません。'); return }
+    if (!('speechSynthesis' in window)) {
+      setPlayCount((count) => Math.max(0, count - 1))
+      setAudioError('このブラウザは音声読み上げに対応していません。')
+      return
+    }
     const synthesis = window.speechSynthesis
     synthesis.cancel()
     const utterance = new SpeechSynthesisUtterance(question.text)
@@ -421,13 +436,14 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
         </div>
       </div>
       {audioError && <p className="audio-error" role="alert">{audioError}</p>}
-      <form onSubmit={(event) => { event.preventDefault(); if (answer.trim() && !feedback) onSubmit(answer) }}>
+      <form onSubmit={(event) => { event.preventDefault(); if (answer.trim() && !feedback) onSubmit(answer, playCount) }}>
         <label htmlFor="listening-answer">Your answer</label>
         <textarea id="listening-answer" value={answer} onChange={(event) => setAnswer(event.target.value)} disabled={Boolean(feedback)} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Type exactly what you hear…" autoFocus />
         {!feedback && <button className="next-button" disabled={!answer.trim()} type="submit">Submit <span>⌘↵</span></button>}
       </form>
       {feedback && <div className={`listening-feedback ${feedback.evaluation.assessment}`} aria-live="polite">
-        <div className="assessment-head"><span>{ASSESSMENT_LABELS[feedback.evaluation.assessment]}</span><strong>{feedback.evaluation.assessment === 'exact' ? '✓' : feedback.evaluation.assessment === 'minor_spelling_error' ? '△' : '!'}</strong></div>
+        <div className="assessment-head"><span>{ASSESSMENT_LABELS[feedback.evaluation.assessment]}</span><strong>{feedback.points} / {LISTENING_POINTS_PER_QUESTION}</strong></div>
+        <div className="score-detail"><span>精度 {Math.round(feedback.evaluation.accuracy * 100)}%</span><span>再生 {feedback.playCount}回 × {Math.round(feedback.replayMultiplier * 100)}%</span></div>
         <div className="diff-box"><span>Correct answer</span><p>{parts.map((part, index) => <mark key={`${part.kind}-${index}`} className={part.kind}>{part.value}</mark>)}</p></div>
         {feedback.evaluation.missedTags.length > 0 && <div className="missed-tags"><span>見逃し傾向</span>{feedback.evaluation.missedTags.map((tag) => <b key={tag}>{tag}</b>)}</div>}
       </div>}
@@ -443,13 +459,18 @@ function ListeningResultView({ answers, setsToday, onAgain, onHome }: {
   onHome: () => void
 }) {
   const exact = answers.filter((answer) => answer.evaluation.assessment === 'exact').length
-  const minor = answers.filter((answer) => answer.evaluation.assessment === 'minor_spelling_error').length
+  const maximumScore = answers.length * LISTENING_POINTS_PER_QUESTION
+  const score = Math.round(answers.reduce((sum, answer) => sum + answer.points, 0))
+  const scoreRate = maximumScore ? score / maximumScore : 0
+  const accuracy = answers.length ? answers.reduce((sum, answer) => sum + answer.evaluation.accuracy, 0) / answers.length : 0
+  const averagePlays = answers.length ? answers.reduce((sum, answer) => sum + answer.playCount, 0) / answers.length : 0
+  const resultLabel = scoreRate >= 0.9 ? '本番レベル' : scoreRate >= 0.75 ? 'かなり良い' : scoreRate >= 0.6 ? '定着途中' : 'まずはここから'
   return <section className="result-card">
-    <div className={`result-ring ${exact === answers.length ? 'perfect' : ''}`}><strong>{exact}</strong><span>/ {answers.length}</span></div>
+    <div className={`result-ring listening-score-ring ${score === maximumScore ? 'perfect' : ''}`}><strong>{score}</strong><span>/ {maximumScore}</span></div>
     <p className="eyebrow">SCENARIO COMPLETE</p>
-    <h1>{exact === answers.length ? 'Exact!' : '1シナリオ完了'}</h1>
+    <h1>{resultLabel}</h1>
     <p>今日は合計 {setsToday}セット完了しました</p>
-    <div className="result-summary"><div><span>Exact</span><strong>{exact}</strong></div><div><span>Minor spelling</span><strong>{minor}</strong></div><div><span>Listening error</span><strong>{answers.length - exact - minor}</strong></div></div>
+    <div className="result-summary"><div><span>再現精度</span><strong>{Math.round(accuracy * 100)}%</strong></div><div><span>平均再生</span><strong>{averagePlays.toFixed(1)}回</strong></div><div><span>Exact</span><strong>{exact} / {answers.length}</strong></div></div>
     <button className="primary-cta" onClick={onAgain}><span>次の7問をやる</span><span>→</span></button>
     <button className="text-button home-link" onClick={onHome}>ホームに戻る</button>
   </section>

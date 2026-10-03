@@ -95,6 +95,9 @@ export interface ListeningAnswerRecord {
   expected: string
   assessment: ListeningAssessment
   missedTags: ListeningTag[]
+  accuracy: number
+  playCount: number
+  score: number
   answeredAt: string
 }
 
@@ -104,6 +107,9 @@ export interface ListeningStats {
   minorSpellingError: number
   listeningError: number
   setsCompleted: number
+  totalScore: number
+  totalPossibleScore: number
+  bestScenarioScore: number
   missedTags: Record<ListeningTag, number>
   recentAnswers: ListeningAnswerRecord[]
   completedScenarioIds: string[]

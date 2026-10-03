@@ -1,4 +1,5 @@
 import { calculateMastery, emptyProgress, localDate } from './lib'
+import { LISTENING_POINTS_PER_QUESTION } from './listening'
 import type { AppData, CourseId, DailyRecord, ListeningAnswerRecord, ListeningStats, QuestionProgress } from './types'
 
 export const STORAGE_KEYS = {
@@ -14,6 +15,9 @@ const emptyListening = (): ListeningStats => ({
   minorSpellingError: 0,
   listeningError: 0,
   setsCompleted: 0,
+  totalScore: 0,
+  totalPossibleScore: 0,
+  bestScenarioScore: 0,
   missedTags: { article: 0, preposition: 0, 'plural-s': 0, 'past-tense': 0, auxiliary: 0, other: 0 },
   recentAnswers: [],
   completedScenarioIds: [],
@@ -114,6 +118,8 @@ export function recordListeningAnswer(data: AppData, answer: ListeningAnswerReco
     exact: data.listening.exact + Number(answer.assessment === 'exact'),
     minorSpellingError: data.listening.minorSpellingError + Number(answer.assessment === 'minor_spelling_error'),
     listeningError: data.listening.listeningError + Number(answer.assessment === 'listening_error'),
+    totalScore: data.listening.totalScore + answer.score,
+    totalPossibleScore: data.listening.totalPossibleScore + LISTENING_POINTS_PER_QUESTION,
     missedTags,
     recentAnswers: [...data.listening.recentAnswers, answer].slice(-100),
   }
@@ -122,11 +128,12 @@ export function recordListeningAnswer(data: AppData, answer: ListeningAnswerReco
   return next
 }
 
-export function completeListeningScenario(data: AppData, scenarioId: string, exactCount: number, total: number): AppData {
+export function completeListeningScenario(data: AppData, scenarioId: string, exactCount: number, total: number, score: number): AppData {
   const withSet = completeSet(data, exactCount, total, 'exact-listening')
   const listening = {
     ...withSet.listening,
     setsCompleted: withSet.listening.setsCompleted + 1,
+    bestScenarioScore: Math.max(withSet.listening.bestScenarioScore, score),
     completedScenarioIds: [...new Set([...withSet.listening.completedScenarioIds, scenarioId])],
   }
   const next = { ...withSet, listening }
