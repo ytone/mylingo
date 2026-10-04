@@ -88,7 +88,7 @@ vite.config.ts
 
 ## Exact Listeningデータ
 
-本番データは`src/data/exact-listening-audio.json`から読み込みます。現在の生成形式（`sets[].sentences[]`）は`src/courses.ts`でアプリ内部の共通schemaへ変換されます。各setは一意な`id`、`topic`、ちょうど7つの`sentences`を持ち、各sentenceは1〜7の`index`、1〜3の`semanticChunks`、正解英文`text`を持ちます。実音声にはsentenceの`audio`または`audioSrc`を使用し、音声7件が揃ったscenarioだけを学習対象にします。現在はGemini TTSで生成した8scenarioを収録しています。
+本番データは`src/data/exact-listening-audio.json`から読み込みます。現在の生成形式（`sets[].sentences[]`）は`src/courses.ts`でアプリ内部の共通schemaへ変換されます。各setは一意な`id`、`topic`、ちょうど7つの`sentences`を持ち、各sentenceは1〜7の`index`、1〜3の`semanticChunks`、正解英文`text`を持ちます。通常音声にはsentenceの`audio`または`audioSrc`、Geminiで別生成した低速音声には`audioSlow`または`audioSlowSrc`を使用します。通常音声7件が揃ったscenarioだけを学習対象にします。現在はGemini TTSで生成した20scenarioを収録し、全140問に通常版と低速版の音声があります。
 
 ```json
 {
@@ -108,7 +108,9 @@ vite.config.ts
 
 ### Listeningスコア
 
-各問20点、7問で140点満点です。単語単位の再現精度（近いスペルには部分点）に、再生回数の係数（1回100%、2回80%、3回50%、以降は1回ごとに10ポイント減、7回以上は10%）を掛けて各問の得点を計算し、シナリオ終了時に合計を四捨五入します。
+各問20点、7問で140点満点です。単語単位の再現精度（近いスペルには部分点）に、再生回数の係数（1回100%、2回80%、3回50%、以降は1回ごとに10ポイント減、7回以上は10%）を掛けます。「ゆっくり」を一度でも再生した問題には、さらに低速使用係数80%を掛けて得点を計算し、シナリオ終了時に合計を四捨五入します。
+
+Listening画面はキーボードだけでも操作できます。`Option/Alt + P`で再生、`Option/Alt + S`で低速、`Option/Alt + N`で通常、`Command/Ctrl + Enter`で送信または次の問題へ進みます。問題が切り替わるたびに回答欄へ自動でフォーカスします。
 
 ## masteryScore
 

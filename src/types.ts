@@ -73,6 +73,7 @@ export interface ListeningQuestion {
   chunkCount: 1 | 2 | 3
   text: string
   audioSrc?: string
+  audioSlowSrc?: string
   focusTags?: ListeningTag[]
 }
 
@@ -97,6 +98,7 @@ export interface ListeningAnswerRecord {
   missedTags: ListeningTag[]
   accuracy: number
   playCount: number
+  usedSlowAudio: boolean
   score: number
   answeredAt: string
 }

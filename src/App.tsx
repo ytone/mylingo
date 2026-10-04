@@ -12,7 +12,7 @@ const questions = rawQuestions as Question[]
 type Screen = 'home' | 'quiz' | 'result' | 'listening' | 'listening-result' | 'questions' | 'detail' | 'settings'
 
 interface AnswerResult { question: Question; selected: string; correct: boolean }
-interface ListeningResult { question: ListeningQuestion; answer: string; evaluation: ListeningEvaluation; playCount: number; replayMultiplier: number; points: number }
+interface ListeningResult { question: ListeningQuestion; answer: string; evaluation: ListeningEvaluation; playCount: number; replayMultiplier: number; speedMultiplier: number; usedSlowAudio: boolean; points: number }
 
 const formatPercent = (correct: number, total: number) => total ? `${Math.round(correct / total * 100)}%` : '—'
 const shortDate = (value: string | null) => value ? new Intl.DateTimeFormat('ja-JP', { month: 'short', day: 'numeric' }).format(new Date(value)) : '未回答'
@@ -95,12 +95,12 @@ export default function App() {
     navigate('listening')
   }
 
-  const submitListening = (answer: string, playCount: number) => {
+  const submitListening = (answer: string, playCount: number, usedSlowAudio: boolean) => {
     if (listeningFeedback) return
     const question = scenario.questions[listeningIndex]
     const evaluation = evaluateListeningAnswer(answer, question)
-    const score = calculateListeningScore(evaluation, playCount)
-    const result = { question, answer, evaluation, ...score }
+    const score = calculateListeningScore(evaluation, playCount, usedSlowAudio)
+    const result = { question, answer, evaluation, usedSlowAudio, ...score }
     setListeningAnswers((previous) => [...previous, result])
     setListeningFeedback(result)
     setData((previous) => recordListeningAnswer(previous, {
@@ -112,6 +112,7 @@ export default function App() {
       missedTags: evaluation.missedTags,
       accuracy: evaluation.accuracy,
       playCount: score.playCount,
+      usedSlowAudio,
       score: score.points,
       answeredAt: new Date().toISOString(),
     }))
@@ -323,16 +324,18 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
   question: ListeningQuestion
   current: number
   feedback: ListeningResult | null
-  onSubmit: (answer: string, playCount: number) => void
+  onSubmit: (answer: string, playCount: number, usedSlowAudio: boolean) => void
   onNext: () => void
   onExit: () => void
 }) {
   const [answer, setAnswer] = useState('')
   const [audioError, setAudioError] = useState('')
-  const [playbackRate, setPlaybackRate] = useState(1)
+  const [audioMode, setAudioMode] = useState<'slow' | 'normal'>('normal')
   const [playCount, setPlayCount] = useState(0)
+  const [usedSlowAudio, setUsedSlowAudio] = useState(false)
   const speechRef = useRef<SpeechSynthesisUtterance | null>(null)
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const answerRef = useRef<HTMLTextAreaElement | null>(null)
   const autoPlayTimerRef = useRef<number | null>(null)
   const hasShownFirstQuestionRef = useRef(false)
   const total = COURSES['exact-listening'].questionsPerSet
@@ -343,24 +346,16 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
     setAnswer('')
     setAudioError('')
     setPlayCount(0)
+    setUsedSlowAudio(false)
+    if (!question.audioSlowSrc && question.audioSrc) setAudioMode('normal')
+    const frame = window.requestAnimationFrame(() => answerRef.current?.focus())
+    return () => window.cancelAnimationFrame(frame)
   }, [question.id])
   useEffect(() => () => {
     if (autoPlayTimerRef.current !== null) window.clearTimeout(autoPlayTimerRef.current)
     audioRef.current?.pause()
     window.speechSynthesis?.cancel()
   }, [])
-  useEffect(() => {
-    const handler = (event: KeyboardEvent) => {
-      if (event.key === 'Enter' && (event.metaKey || event.ctrlKey)) {
-        event.preventDefault()
-        if (feedback) onNext()
-        else if (answer.trim()) onSubmit(answer, playCount)
-      }
-    }
-    window.addEventListener('keydown', handler)
-    return () => window.removeEventListener('keydown', handler)
-  }, [answer, feedback, onNext, onSubmit, playCount])
-
   const playAudio = () => {
     if (autoPlayTimerRef.current !== null) {
       window.clearTimeout(autoPlayTimerRef.current)
@@ -368,10 +363,11 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
     }
     setAudioError('')
     setPlayCount((count) => count + 1)
-    if (question.audioSrc) {
+    if (audioMode === 'slow') setUsedSlowAudio(true)
+    const selectedAudioSrc = audioMode === 'slow' ? question.audioSlowSrc ?? question.audioSrc : question.audioSrc
+    if (selectedAudioSrc) {
       audioRef.current?.pause()
-      const audio = new Audio(question.audioSrc)
-      audio.playbackRate = playbackRate
+      const audio = new Audio(selectedAudioSrc)
       audioRef.current = audio
       void audio.play().catch(() => {
         setPlayCount((count) => Math.max(0, count - 1))
@@ -388,7 +384,7 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
     synthesis.cancel()
     const utterance = new SpeechSynthesisUtterance(question.text)
     utterance.lang = 'en-US'
-    utterance.rate = playbackRate
+    utterance.rate = audioMode === 'slow' ? 0.75 : 1
     utterance.volume = 1
     const voices = synthesis.getVoices()
     utterance.voice = voices.find((voice) => voice.lang === 'en-US' && voice.localService)
@@ -401,6 +397,35 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
     synthesis.resume()
     synthesis.speak(utterance)
   }
+
+  useEffect(() => {
+    const handler = (event: KeyboardEvent) => {
+      if (event.altKey && event.code === 'KeyP') {
+        event.preventDefault()
+        playAudio()
+        return
+      }
+      if (event.altKey && event.code === 'KeyS') {
+        if (question.audioSlowSrc || !question.audioSrc) {
+          event.preventDefault()
+          setAudioMode('slow')
+        }
+        return
+      }
+      if (event.altKey && event.code === 'KeyN') {
+        event.preventDefault()
+        setAudioMode('normal')
+        return
+      }
+      if (event.key === 'Enter' && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault()
+        if (feedback) onNext()
+        else if (answer.trim()) onSubmit(answer, playCount, usedSlowAudio)
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [answer, audioMode, feedback, onNext, onSubmit, playCount, question.audioSlowSrc, question.audioSrc, usedSlowAudio])
 
   useEffect(() => {
     if (!hasShownFirstQuestionRef.current) {
@@ -429,21 +454,23 @@ function ListeningView({ scenario, question, current, feedback, onSubmit, onNext
       <p className="scenario-label">{scenario.title}</p>
       <h1>聞こえた英文を<br/>正確に入力してください。</h1>
       <div className="audio-controls">
-        <button className="audio-button" onClick={playAudio}><span aria-hidden="true">▶</span><strong>音声を再生</strong><small>{question.audioSrc ? 'AI-generated voice · Listen again as needed' : 'Browser voice'}</small></button>
+        <button className="audio-button" aria-keyshortcuts="Alt+P" onClick={playAudio}><span aria-hidden="true">▶</span><strong>音声を再生</strong><small>{question.audioSrc ? 'AI-generated voice · Listen again as needed' : 'Browser voice'}</small></button>
         <div className="speed-control" aria-label="再生速度">
           <span>再生速度</span>
-          {[0.75, 0.9, 1, 1.15].map((rate) => <button key={rate} className={playbackRate === rate ? 'active' : ''} aria-pressed={playbackRate === rate} onClick={() => setPlaybackRate(rate)}>{rate}×</button>)}
+          <button className={audioMode === 'slow' ? 'active' : ''} aria-keyshortcuts="Alt+S" aria-pressed={audioMode === 'slow'} disabled={!question.audioSlowSrc && Boolean(question.audioSrc)} onClick={() => setAudioMode('slow')}>ゆっくり</button>
+          <button className={audioMode === 'normal' ? 'active' : ''} aria-keyshortcuts="Alt+N" aria-pressed={audioMode === 'normal'} onClick={() => setAudioMode('normal')}>通常</button>
         </div>
+        <div className="shortcut-guide" aria-label="キーボードショートカット"><span><kbd>⌥P</kbd> 再生</span><span><kbd>⌥S</kbd> ゆっくり</span><span><kbd>⌥N</kbd> 通常</span><span><kbd>⌘↵</kbd> 送信・次へ</span></div>
       </div>
       {audioError && <p className="audio-error" role="alert">{audioError}</p>}
-      <form onSubmit={(event) => { event.preventDefault(); if (answer.trim() && !feedback) onSubmit(answer, playCount) }}>
+      <form onSubmit={(event) => { event.preventDefault(); if (answer.trim() && !feedback) onSubmit(answer, playCount, usedSlowAudio) }}>
         <label htmlFor="listening-answer">Your answer</label>
-        <textarea id="listening-answer" value={answer} onChange={(event) => setAnswer(event.target.value)} disabled={Boolean(feedback)} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Type exactly what you hear…" autoFocus />
+        <textarea ref={answerRef} id="listening-answer" value={answer} onChange={(event) => setAnswer(event.target.value)} disabled={Boolean(feedback)} autoCapitalize="none" autoCorrect="off" spellCheck={false} placeholder="Type exactly what you hear…" autoFocus />
         {!feedback && <button className="next-button" disabled={!answer.trim()} type="submit">Submit <span>⌘↵</span></button>}
       </form>
       {feedback && <div className={`listening-feedback ${feedback.evaluation.assessment}`} aria-live="polite">
         <div className="assessment-head"><span>{ASSESSMENT_LABELS[feedback.evaluation.assessment]}</span><strong>{feedback.points} / {LISTENING_POINTS_PER_QUESTION}</strong></div>
-        <div className="score-detail"><span>精度 {Math.round(feedback.evaluation.accuracy * 100)}%</span><span>再生 {feedback.playCount}回 × {Math.round(feedback.replayMultiplier * 100)}%</span></div>
+        <div className="score-detail"><span>精度 {Math.round(feedback.evaluation.accuracy * 100)}%</span><span>再生 {feedback.playCount}回 × {Math.round(feedback.replayMultiplier * 100)}%</span>{feedback.usedSlowAudio && <span>低速使用 × {Math.round(feedback.speedMultiplier * 100)}%</span>}</div>
         <div className="diff-box"><span>Correct answer</span><p>{parts.map((part, index) => <mark key={`${part.kind}-${index}`} className={part.kind}>{part.value}</mark>)}</p></div>
         {feedback.evaluation.missedTags.length > 0 && <div className="missed-tags"><span>見逃し傾向</span>{feedback.evaluation.missedTags.map((tag) => <b key={tag}>{tag}</b>)}</div>}
       </div>}

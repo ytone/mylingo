@@ -32,7 +32,7 @@ function adaptGeneratedDataset(value: unknown): ListeningDataset | null {
         title: set.topic,
         context: typeof set.context === 'string' ? set.context : undefined,
         questions: set.sentences.map((sentence) => {
-          const item = sentence as { index?: unknown; text?: unknown; semanticChunks?: unknown; features?: unknown; audio?: unknown; audioSrc?: unknown }
+          const item = sentence as { index?: unknown; text?: unknown; semanticChunks?: unknown; features?: unknown; audio?: unknown; audioSrc?: unknown; audioSlow?: unknown; audioSlowSrc?: unknown }
           if (typeof item.index !== 'number' || typeof item.text !== 'string' || ![1, 2, 3].includes(Number(item.semanticChunks))) throw new Error(`Invalid sentence in ${set.id}.`)
           return {
             id: `${set.id}-${String(item.index).padStart(2, '0')}`,
@@ -40,6 +40,7 @@ function adaptGeneratedDataset(value: unknown): ListeningDataset | null {
             chunkCount: item.semanticChunks as 1 | 2 | 3,
             text: item.text,
             audioSrc: resolveAudioSrc(item.audioSrc ?? item.audio),
+            audioSlowSrc: resolveAudioSrc(item.audioSlowSrc ?? item.audioSlow),
             focusTags: Array.isArray(item.features) ? [...new Set(item.features.filter((feature): feature is string => typeof feature === 'string').map(mapFeature))] : [],
           }
         }),

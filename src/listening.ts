@@ -81,15 +81,18 @@ export interface ListeningScore {
   points: number
   playCount: number
   replayMultiplier: number
+  speedMultiplier: number
 }
 
-export function calculateListeningScore(evaluation: ListeningEvaluation, playCount: number): ListeningScore {
+export function calculateListeningScore(evaluation: ListeningEvaluation, playCount: number, usedSlowAudio = false): ListeningScore {
   const normalizedPlayCount = Math.max(1, Math.floor(playCount))
   const multiplier = replayMultiplier(normalizedPlayCount)
+  const speedMultiplier = usedSlowAudio ? 0.8 : 1
   return {
-    points: Math.round(LISTENING_POINTS_PER_QUESTION * evaluation.accuracy * multiplier * 10) / 10,
+    points: Math.round(LISTENING_POINTS_PER_QUESTION * evaluation.accuracy * multiplier * speedMultiplier * 10) / 10,
     playCount: normalizedPlayCount,
     replayMultiplier: multiplier,
+    speedMultiplier,
   }
 }
 

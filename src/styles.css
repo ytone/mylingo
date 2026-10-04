@@ -130,6 +130,8 @@ footer { border-top: 1px solid var(--line); padding: 28px 0 45px; color: #96998f
 .audio-button > span { width: 48px; height: 48px; grid-row: 1 / 3; display: grid; place-content: center; border-radius: 50%; background: var(--green); color: white; padding-left: 3px; }
 .audio-button strong { margin-left: 15px; font-size: 16px; }.audio-button small { margin: 3px 0 0 15px; color: var(--muted); }
 .speed-control { display: flex; align-items: center; justify-content: flex-end; gap: 6px; margin-top: 10px; }.speed-control > span { margin-right: auto; color: var(--muted); font-size: 11px; }.speed-control button { min-width: 50px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 18px; background: white; color: var(--muted); font-size: 11px; cursor: pointer; }.speed-control button.active { border-color: var(--green); background: var(--green); color: white; font-weight: 700; }
+.speed-control button:disabled { opacity: .4; cursor: not-allowed; }
+.shortcut-guide { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px 12px; margin-top: 10px; color: var(--muted); font-size: 10px; }.shortcut-guide kbd { padding: 2px 5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; background: white; color: var(--ink); font: inherit; font-weight: 700; }
 .audio-error { color: #a45331; font-size: 12px; }
 .listening-card-view form label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .listening-card-view textarea { width: 100%; min-height: 116px; resize: vertical; padding: 17px; border: 1px solid #d2d4cd; border-radius: 10px; background: white; color: var(--ink); font: 16px/1.6 inherit; }
