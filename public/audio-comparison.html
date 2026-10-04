@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exact Listening 音声比較</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #252921;
+      background: #f3f1e9;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(100% - 32px, 900px); margin: 0 auto; padding: 48px 0 80px; }
+    .eyebrow { margin: 0 0 8px; color: #55705f; font-size: 11px; font-weight: 800; letter-spacing: .14em; }
+    h1 { margin: 0; font-size: clamp(30px, 5vw, 48px); letter-spacing: -.055em; }
+    .intro { max-width: 680px; margin: 14px 0 32px; color: #6e7169; line-height: 1.7; }
+    .legend { display: flex; gap: 10px; margin-bottom: 18px; }
+    .legend span { padding: 7px 11px; border-radius: 99px; background: white; border: 1px solid #d8d8cf; font-size: 11px; }
+    .question { margin: 14px 0; padding: 22px; border: 1px solid #d8d8cf; border-radius: 15px; background: #fffefa; box-shadow: 0 7px 24px rgba(44, 48, 38, .04); }
+    .question header { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; margin-bottom: 18px; }
+    .number { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; background: #315c45; color: white; font-size: 12px; font-weight: 800; }
+    .question p { margin: 3px 0 0; font-size: 16px; line-height: 1.55; }
+    .players { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .player { padding: 14px; border-radius: 11px; background: #f4f4ef; }
+    .player.slow { background: #eaf1ec; }
+    .player strong { display: flex; justify-content: space-between; margin-bottom: 9px; font-size: 12px; }
+    .player strong span { color: #7c8077; font-weight: 500; }
+    audio { width: 100%; height: 38px; }
+    footer { margin-top: 28px; color: #85877f; font-size: 11px; text-align: center; }
+    @media (max-width: 620px) {
+      main { padding-top: 30px; }
+      .players { grid-template-columns: 1fr; }
+      .question { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">GEMINI 3.8 FLASH TTS · GERO</p>
+    <h1>通常音声と低速音声</h1>
+    <p class="intro">同じ英文を、通常版とGeminiで別生成した「ゆっくり」版で聴き比べられます。再生すると、ほかの音声は自動で停止します。</p>
+    <div class="legend"><span>Normal：既存音声</span><span>Slow：約75%を指示した別生成音声</span></div>
+    <div id="questions"></div>
+    <footer>Shared Study Booth Booking · 7 sentences</footer>
+  </main>
+  <script>
+    const sentences = [
+      'The study booths are on the second floor.',
+      'You can reserve one online for two hours.',
+      'Each booth has a screen and four chairs.',
+      'Bring your student card to unlock the door.',
+      'Please cancel online if your group no longer needs the booth.',
+      'Food is not allowed inside, but covered drinks are fine during your study session.',
+      'Use the phone by the stairs to contact library staff if the screen is not working.',
+    ]
+
+    const root = document.querySelector('#questions')
+    for (const [index, sentence] of sentences.entries()) {
+      const number = String(index + 1).padStart(2, '0')
+      const section = document.createElement('section')
+      section.className = 'question'
+      section.innerHTML = `
+        <header><span class="number">${index + 1}</span><p>${sentence}</p></header>
+        <div class="players">
+          <div class="player"><strong>通常 <span>Normal</span></strong><audio controls preload="metadata" src="audio/exact-listening/set_001/q${number}.wav"></audio></div>
+          <div class="player slow"><strong>ゆっくり <span>Gemini slow</span></strong><audio controls preload="metadata" src="audio/exact-listening/set_001/q${number}-slow.wav"></audio></div>
+        </div>`
+      root.append(section)
+    }
+
+    document.addEventListener('play', event => {
+      if (!(event.target instanceof HTMLAudioElement)) return
+      document.querySelectorAll('audio').forEach(audio => {
+        if (audio !== event.target) audio.pause()
+      })
+    }, true)
+  </script>
+</body>
+</html>
