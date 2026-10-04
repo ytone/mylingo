@@ -2138,7 +2138,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2149,7 +2151,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2161,7 +2165,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2174,7 +2180,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2187,7 +2195,9 @@
             "preposition",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2200,7 +2210,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2212,9 +2224,12 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_021/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_021/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_022",
@@ -2232,7 +2247,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2243,7 +2260,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2254,7 +2273,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2266,7 +2287,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2277,7 +2300,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2290,7 +2315,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2302,9 +2329,12 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_022/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_022/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_023",
@@ -2320,7 +2350,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2331,7 +2363,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2343,7 +2377,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2354,7 +2390,9 @@
           "features": [
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2366,7 +2404,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2378,7 +2418,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2392,9 +2434,12 @@
             "modal",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_023/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_023/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_024",
@@ -2411,7 +2456,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2423,7 +2470,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2434,7 +2483,9 @@
           "features": [
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2446,7 +2497,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2458,7 +2511,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2472,7 +2527,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2485,9 +2542,12 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_024/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_024/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_025",
@@ -2503,7 +2563,9 @@
           "semanticChunks": 1,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2515,7 +2577,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2525,7 +2589,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2537,7 +2603,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2548,7 +2616,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2562,7 +2632,9 @@
             "modal",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2574,9 +2646,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_025/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_025/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_026",
@@ -2593,7 +2668,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2604,7 +2681,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2614,7 +2693,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2627,7 +2708,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2639,7 +2722,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2652,7 +2737,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2665,9 +2752,12 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_026/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_026/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_027",
@@ -2684,7 +2774,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2695,7 +2787,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2706,7 +2800,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2717,7 +2813,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2729,7 +2827,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2741,7 +2841,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2754,9 +2856,12 @@
             "modal",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_027/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_027/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_028",
@@ -2774,7 +2879,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2785,7 +2892,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2797,7 +2906,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2809,7 +2920,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2821,7 +2934,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2834,7 +2949,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2848,9 +2965,12 @@
             "modal",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_028/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_028/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_029",
@@ -2867,7 +2987,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2879,7 +3001,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2890,7 +3014,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2902,7 +3028,9 @@
             "article",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q04-slow.wav"
         },
         {
           "index": 5,
@@ -2914,7 +3042,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q05-slow.wav"
         },
         {
           "index": 6,
@@ -2927,7 +3057,9 @@
             "preposition",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q06-slow.wav"
         },
         {
           "index": 7,
@@ -2940,9 +3072,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_029/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_029/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_030",
@@ -2961,7 +3096,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q01-slow.wav"
         },
         {
           "index": 2,
@@ -2973,7 +3110,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q02-slow.wav"
         },
         {
           "index": 3,
@@ -2983,7 +3122,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q03-slow.wav"
         },
         {
           "index": 4,
@@ -2995,7 +3136,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3007,7 +3150,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3019,7 +3164,9 @@
             "article",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3032,9 +3179,12 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_030/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_030/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_031",
@@ -3051,7 +3201,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3063,7 +3215,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3074,7 +3228,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3087,7 +3243,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3099,7 +3257,9 @@
             "article",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3113,7 +3273,9 @@
             "modal",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3126,9 +3288,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_031/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_031/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_032",
@@ -3146,7 +3311,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3156,7 +3323,9 @@
           "semanticChunks": 1,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3167,7 +3336,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3179,7 +3350,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3190,7 +3363,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3204,7 +3379,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3218,9 +3395,12 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_032/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_032/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_033",
@@ -3237,7 +3417,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3249,7 +3431,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3261,7 +3445,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3274,7 +3460,9 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3285,7 +3473,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3298,7 +3488,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3311,9 +3503,12 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_033/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_033/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_034",
@@ -3329,7 +3524,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3340,7 +3537,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3351,7 +3550,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3363,7 +3564,9 @@
             "article",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3376,7 +3579,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3390,7 +3595,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3403,9 +3610,12 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_034/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_034/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_035",
@@ -3422,7 +3632,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3434,7 +3646,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3446,7 +3660,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3457,7 +3673,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3469,7 +3687,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3481,7 +3701,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3493,9 +3715,12 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_035/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_035/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_036",
@@ -3513,7 +3738,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3524,7 +3751,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3534,7 +3763,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3546,7 +3777,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3559,7 +3792,9 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3571,7 +3806,9 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3585,9 +3822,12 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_036/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_036/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_037",
@@ -3603,7 +3843,9 @@
           "semanticChunks": 1,
           "features": [
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3615,7 +3857,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3625,7 +3869,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3637,7 +3883,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3648,7 +3896,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3662,7 +3912,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3675,9 +3927,12 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_037/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_037/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_038",
@@ -3694,7 +3949,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3705,7 +3962,9 @@
           "features": [
             "article",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3716,7 +3975,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3728,7 +3989,9 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3739,7 +4002,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3751,7 +4016,9 @@
             "article",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3763,9 +4030,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_038/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_038/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_039",
@@ -3783,7 +4053,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3793,7 +4065,9 @@
           "semanticChunks": 1,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3804,7 +4078,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3814,7 +4090,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3826,7 +4104,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3841,7 +4121,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3855,9 +4137,12 @@
             "auxiliary",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_039/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_039/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_040",
@@ -3875,7 +4160,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3886,7 +4173,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3900,7 +4189,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q03-slow.wav"
         },
         {
           "index": 4,
@@ -3912,7 +4203,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q04-slow.wav"
         },
         {
           "index": 5,
@@ -3924,7 +4217,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q05-slow.wav"
         },
         {
           "index": 6,
@@ -3937,7 +4232,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q06-slow.wav"
         },
         {
           "index": 7,
@@ -3950,9 +4247,12 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_040/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_040/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_041",
@@ -3971,7 +4271,9 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q01-slow.wav"
         },
         {
           "index": 2,
@@ -3982,7 +4284,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q02-slow.wav"
         },
         {
           "index": 3,
@@ -3993,7 +4297,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4006,7 +4312,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4017,7 +4325,9 @@
           "features": [
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4031,7 +4341,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4047,9 +4359,12 @@
             "condition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_041/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_041/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_042",
@@ -4067,7 +4382,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4078,7 +4395,9 @@
           "features": [
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4089,7 +4408,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4102,7 +4423,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4115,7 +4438,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4127,7 +4452,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4141,9 +4468,12 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_042/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_042/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_043",
@@ -4161,7 +4491,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4171,7 +4503,9 @@
           "semanticChunks": 1,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4183,7 +4517,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4195,7 +4531,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4207,7 +4545,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4219,7 +4559,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4232,9 +4574,12 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_043/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_043/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_044",
@@ -4251,7 +4596,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4263,7 +4610,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4274,7 +4623,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4286,7 +4637,9 @@
             "article",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4298,7 +4651,9 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4312,7 +4667,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4326,9 +4683,12 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_044/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_044/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_045",
@@ -4346,7 +4706,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4358,7 +4720,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4370,7 +4734,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4382,7 +4748,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4394,7 +4762,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4405,7 +4775,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4419,9 +4791,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_045/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_045/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_046",
@@ -4439,7 +4814,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4451,7 +4828,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4462,7 +4841,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4475,7 +4856,9 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4488,7 +4871,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4502,7 +4887,9 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4516,9 +4903,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_046/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_046/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_047",
@@ -4534,7 +4924,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4545,7 +4937,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4557,7 +4951,9 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4567,7 +4963,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4579,7 +4977,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4592,7 +4992,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4604,9 +5006,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_047/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_047/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_048",
@@ -4624,7 +5029,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4635,7 +5042,9 @@
           "features": [
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4647,7 +5056,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4659,7 +5070,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4671,7 +5084,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4683,7 +5098,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4696,9 +5113,12 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_048/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_048/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_049",
@@ -4715,7 +5135,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4725,7 +5147,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4736,7 +5160,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4747,7 +5173,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4759,7 +5187,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4773,7 +5203,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4787,9 +5219,12 @@
             "auxiliary",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_049/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_049/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_050",
@@ -4805,7 +5240,9 @@
           "semanticChunks": 1,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4816,7 +5253,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4827,7 +5266,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4838,7 +5279,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4849,7 +5292,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4862,7 +5307,9 @@
             "preposition",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4873,9 +5320,12 @@
           "features": [
             "article",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_050/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_050/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_051",
@@ -4891,7 +5341,9 @@
           "semanticChunks": 1,
           "features": [
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4901,7 +5353,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q02-slow.wav"
         },
         {
           "index": 3,
@@ -4913,7 +5367,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q03-slow.wav"
         },
         {
           "index": 4,
@@ -4927,7 +5383,9 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q04-slow.wav"
         },
         {
           "index": 5,
@@ -4940,7 +5398,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q05-slow.wav"
         },
         {
           "index": 6,
@@ -4954,7 +5414,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q06-slow.wav"
         },
         {
           "index": 7,
@@ -4968,9 +5430,12 @@
             "modal",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_051/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_051/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_052",
@@ -4987,7 +5452,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q01-slow.wav"
         },
         {
           "index": 2,
@@ -4998,7 +5465,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5010,7 +5479,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5021,7 +5492,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5033,7 +5506,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5045,7 +5520,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5059,9 +5536,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_052/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_052/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_053",
@@ -5077,7 +5557,9 @@
           "semanticChunks": 1,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5088,7 +5570,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5098,7 +5582,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5110,7 +5596,9 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5121,7 +5609,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5134,7 +5624,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5147,9 +5639,12 @@
             "modal",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_053/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_053/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_054",
@@ -5166,7 +5661,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5178,7 +5675,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5188,7 +5687,9 @@
           "semanticChunks": 2,
           "features": [
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5200,7 +5701,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5213,7 +5716,9 @@
             "preposition",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5226,7 +5731,9 @@
             "preposition",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5240,9 +5747,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_054/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_054/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_055",
@@ -5259,7 +5769,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5270,7 +5782,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5283,7 +5797,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5295,7 +5811,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5307,7 +5825,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5321,7 +5841,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5335,9 +5857,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_055/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_055/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_056",
@@ -5355,7 +5880,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5366,7 +5893,9 @@
           "features": [
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5378,7 +5907,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5389,7 +5920,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5402,7 +5935,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5414,7 +5949,9 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5427,9 +5964,12 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_056/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_056/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_057",
@@ -5447,7 +5987,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5457,7 +5999,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5469,7 +6013,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5481,7 +6027,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5493,7 +6041,9 @@
             "modal",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5506,7 +6056,9 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5519,9 +6071,12 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_057/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_057/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_058",
@@ -5538,7 +6093,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5549,7 +6106,9 @@
           "features": [
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5561,7 +6120,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5573,7 +6134,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5586,7 +6149,9 @@
             "modal",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5599,7 +6164,9 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5613,9 +6180,12 @@
             "modal",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_058/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_058/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_059",
@@ -5633,7 +6203,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5646,7 +6218,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5657,7 +6231,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5668,7 +6244,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5681,7 +6259,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5693,7 +6273,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5705,9 +6287,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_059/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_059/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_060",
@@ -5725,7 +6310,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5736,7 +6323,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5747,7 +6336,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5760,7 +6351,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5772,7 +6365,9 @@
             "article",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5784,7 +6379,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5797,9 +6394,12 @@
             "modal",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_060/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_060/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_061",
@@ -5816,7 +6416,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5826,7 +6428,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5839,7 +6443,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5850,7 +6456,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5862,7 +6470,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5876,7 +6486,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5888,9 +6500,12 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_061/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_061/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_062",
@@ -5908,7 +6523,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q01-slow.wav"
         },
         {
           "index": 2,
@@ -5918,7 +6535,9 @@
           "semanticChunks": 1,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q02-slow.wav"
         },
         {
           "index": 3,
@@ -5929,7 +6548,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q03-slow.wav"
         },
         {
           "index": 4,
@@ -5942,7 +6563,9 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q04-slow.wav"
         },
         {
           "index": 5,
@@ -5952,7 +6575,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q05-slow.wav"
         },
         {
           "index": 6,
@@ -5965,7 +6590,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q06-slow.wav"
         },
         {
           "index": 7,
@@ -5978,9 +6605,12 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_062/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_062/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_063",
@@ -5997,7 +6627,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6008,7 +6640,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6019,7 +6653,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6031,7 +6667,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6044,7 +6682,9 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6057,7 +6697,9 @@
             "preposition",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6071,9 +6713,12 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_063/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_063/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_064",
@@ -6090,7 +6735,9 @@
           "features": [
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6102,7 +6749,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6114,7 +6763,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6126,7 +6777,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6138,7 +6791,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6150,7 +6805,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6162,9 +6819,12 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_064/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_064/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_065",
@@ -6182,7 +6842,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6194,7 +6856,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6205,7 +6869,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6219,7 +6885,9 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6230,7 +6898,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6244,7 +6914,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6258,9 +6930,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_065/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_065/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_066",
@@ -6277,7 +6952,9 @@
           "features": [
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6288,7 +6965,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6299,7 +6978,9 @@
           "features": [
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6312,7 +6993,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6325,7 +7008,9 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6338,7 +7023,9 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6352,9 +7039,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_066/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_066/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_067",
@@ -6371,7 +7061,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6382,7 +7074,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6394,7 +7088,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6406,7 +7102,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6418,7 +7116,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6431,7 +7131,9 @@
             "preposition",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6444,9 +7146,12 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_067/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_067/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_068",
@@ -6462,7 +7167,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6473,7 +7180,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6485,7 +7194,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6495,7 +7206,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6508,7 +7221,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6520,7 +7235,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6533,9 +7250,12 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_068/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_068/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_069",
@@ -6553,7 +7273,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6564,7 +7286,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6575,7 +7299,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6587,7 +7313,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6600,7 +7328,9 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6612,7 +7342,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6624,9 +7356,12 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_069/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_069/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_070",
@@ -6643,7 +7378,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6654,7 +7391,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6666,7 +7405,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6678,7 +7419,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6690,7 +7433,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6703,7 +7448,9 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6716,9 +7463,12 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_070/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_070/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_071",
@@ -6735,7 +7485,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6747,7 +7499,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6758,7 +7512,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6768,7 +7524,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6780,7 +7538,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6792,7 +7552,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6805,9 +7567,12 @@
             "preposition",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_071/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_071/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_072",
@@ -6824,7 +7589,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6834,7 +7601,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6845,7 +7614,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6857,7 +7628,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6870,7 +7643,9 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6883,7 +7658,9 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6896,9 +7673,12 @@
             "modal",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_072/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_072/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_073",
@@ -6914,7 +7694,9 @@
           "semanticChunks": 1,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q01-slow.wav"
         },
         {
           "index": 2,
@@ -6926,7 +7708,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q02-slow.wav"
         },
         {
           "index": 3,
@@ -6936,7 +7720,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q03-slow.wav"
         },
         {
           "index": 4,
@@ -6948,7 +7734,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q04-slow.wav"
         },
         {
           "index": 5,
@@ -6960,7 +7748,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q05-slow.wav"
         },
         {
           "index": 6,
@@ -6972,7 +7762,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q06-slow.wav"
         },
         {
           "index": 7,
@@ -6986,9 +7778,12 @@
             "auxiliary",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_073/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_073/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_074",
@@ -7005,7 +7800,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7018,7 +7815,9 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7029,7 +7828,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7040,7 +7841,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7051,7 +7854,9 @@
           "features": [
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7063,7 +7868,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7075,9 +7882,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_074/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_074/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_075",
@@ -7094,7 +7904,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7105,7 +7917,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7117,7 +7931,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7128,7 +7944,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7139,7 +7957,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7150,7 +7970,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7162,9 +7984,12 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_075/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_075/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_076",
@@ -7182,7 +8007,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7193,7 +8020,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7203,7 +8032,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7214,7 +8045,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7226,7 +8059,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7238,7 +8073,9 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7251,9 +8088,12 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_076/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_076/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_077",
@@ -7270,7 +8110,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7280,7 +8122,9 @@
           "semanticChunks": 1,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7290,7 +8134,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7301,7 +8147,9 @@
           "features": [
             "article",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7313,7 +8161,9 @@
             "article",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7327,7 +8177,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7339,9 +8191,12 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_077/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_077/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_078",
@@ -7359,7 +8214,9 @@
             "article",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7371,7 +8228,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7382,7 +8241,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7393,7 +8254,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7405,7 +8268,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7418,7 +8283,9 @@
             "preposition",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7433,9 +8300,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_078/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_078/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_079",
@@ -7452,7 +8322,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7462,7 +8334,9 @@
           "semanticChunks": 1,
           "features": [
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7474,7 +8348,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7485,7 +8361,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7497,7 +8375,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7510,7 +8390,9 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7522,9 +8404,12 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_079/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_079/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_080",
@@ -7542,7 +8427,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7554,7 +8441,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7565,7 +8454,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7577,7 +8468,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7588,7 +8481,9 @@
           "features": [
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7600,7 +8495,9 @@
             "article",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7613,9 +8510,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_080/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_080/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_081",
@@ -7632,7 +8532,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7643,7 +8545,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7653,7 +8557,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7665,7 +8571,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7676,7 +8584,9 @@
           "features": [
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7688,7 +8598,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7699,9 +8611,12 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_081/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_081/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_082",
@@ -7717,7 +8632,9 @@
           "semanticChunks": 1,
           "features": [
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7728,7 +8645,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7740,7 +8659,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7750,7 +8671,9 @@
           "semanticChunks": 2,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7762,7 +8685,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7775,7 +8700,9 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7788,9 +8715,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_082/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_082/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_083",
@@ -7807,7 +8737,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7818,7 +8750,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7828,7 +8762,9 @@
           "semanticChunks": 2,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7841,7 +8777,9 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7853,7 +8791,9 @@
             "article",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7866,7 +8806,9 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7880,9 +8822,12 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_083/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_083/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_084",
@@ -7899,7 +8844,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7910,7 +8857,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q02-slow.wav"
         },
         {
           "index": 3,
@@ -7922,7 +8871,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q03-slow.wav"
         },
         {
           "index": 4,
@@ -7934,7 +8885,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q04-slow.wav"
         },
         {
           "index": 5,
@@ -7945,7 +8898,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q05-slow.wav"
         },
         {
           "index": 6,
@@ -7957,7 +8912,9 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q06-slow.wav"
         },
         {
           "index": 7,
@@ -7969,9 +8926,12 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_084/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_084/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_085",
@@ -7988,7 +8948,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q01-slow.wav"
         },
         {
           "index": 2,
@@ -7999,7 +8961,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8012,7 +8976,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8022,7 +8988,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8036,7 +9004,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8048,7 +9018,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8060,9 +9032,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_085/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_085/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_086",
@@ -8079,7 +9054,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8090,7 +9067,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8101,7 +9080,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8113,7 +9094,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8123,7 +9106,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8137,7 +9122,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8151,9 +9138,12 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_086/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_086/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_087",
@@ -8170,7 +9160,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8180,7 +9172,9 @@
           "semanticChunks": 1,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8192,7 +9186,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8202,7 +9198,9 @@
           "semanticChunks": 2,
           "features": [
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8214,7 +9212,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8228,7 +9228,9 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8241,9 +9243,12 @@
             "modal",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_087/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_087/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_088",
@@ -8260,7 +9265,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8271,7 +9278,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8282,7 +9291,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8294,7 +9305,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8308,7 +9321,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8320,7 +9335,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8332,9 +9349,12 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_088/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_088/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_089",
@@ -8351,7 +9371,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8363,7 +9385,9 @@
             "article",
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8374,7 +9398,9 @@
           "features": [
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8385,7 +9411,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8396,7 +9424,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8408,7 +9438,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8420,9 +9452,12 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_089/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_089/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rasalgethi"
     },
     {
       "id": "set_090",
@@ -8438,7 +9473,9 @@
           "semanticChunks": 1,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8450,7 +9487,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8460,7 +9499,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8471,7 +9512,9 @@
           "features": [
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8483,7 +9526,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8495,7 +9540,9 @@
             "preposition",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8507,9 +9554,12 @@
             "article",
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_090/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_090/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Rina"
     },
     {
       "id": "set_091",
@@ -8526,7 +9576,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8537,7 +9589,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8547,7 +9601,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8558,7 +9614,9 @@
           "features": [
             "article",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8569,7 +9627,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8583,7 +9643,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8595,9 +9657,12 @@
             "article",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_091/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_091/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_092",
@@ -8614,7 +9679,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8626,7 +9693,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8638,7 +9707,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8649,7 +9720,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8660,7 +9733,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8672,7 +9747,9 @@
             "article",
             "modal",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8685,9 +9762,12 @@
             "preposition",
             "condition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_092/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_092/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Zephyr"
     },
     {
       "id": "set_093",
@@ -8705,7 +9785,9 @@
             "article",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8716,7 +9798,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8726,7 +9810,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8738,7 +9824,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8749,7 +9837,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8761,7 +9851,9 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8774,9 +9866,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_093/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_093/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     },
     {
       "id": "set_094",
@@ -8793,7 +9888,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8804,7 +9901,9 @@
           "features": [
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8816,7 +9915,9 @@
             "article",
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8828,7 +9929,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8839,7 +9942,9 @@
           "features": [
             "modal",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8853,7 +9958,9 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8867,9 +9974,12 @@
             "modal",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_094/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_094/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_095",
@@ -8887,7 +9997,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8900,7 +10012,9 @@
             "preposition",
             "modal",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8910,7 +10024,9 @@
           "semanticChunks": 2,
           "features": [
             "article"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q03-slow.wav"
         },
         {
           "index": 4,
@@ -8921,7 +10037,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q04-slow.wav"
         },
         {
           "index": 5,
@@ -8933,7 +10051,9 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q05-slow.wav"
         },
         {
           "index": 6,
@@ -8946,7 +10066,9 @@
             "auxiliary",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q06-slow.wav"
         },
         {
           "index": 7,
@@ -8959,9 +10081,12 @@
             "preposition",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_095/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_095/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Fola"
     },
     {
       "id": "set_096",
@@ -8978,7 +10103,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q01-slow.wav"
         },
         {
           "index": 2,
@@ -8989,7 +10116,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q02-slow.wav"
         },
         {
           "index": 3,
@@ -8999,7 +10128,9 @@
           "semanticChunks": 2,
           "features": [
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q03-slow.wav"
         },
         {
           "index": 4,
@@ -9011,7 +10142,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q04-slow.wav"
         },
         {
           "index": 5,
@@ -9024,7 +10157,9 @@
             "auxiliary",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q05-slow.wav"
         },
         {
           "index": 6,
@@ -9037,7 +10172,9 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q06-slow.wav"
         },
         {
           "index": 7,
@@ -9049,9 +10186,12 @@
             "article",
             "preposition",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_096/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_096/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_097",
@@ -9069,7 +10209,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q01-slow.wav"
         },
         {
           "index": 2,
@@ -9080,7 +10222,9 @@
           "features": [
             "preposition",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q02-slow.wav"
         },
         {
           "index": 3,
@@ -9093,7 +10237,9 @@
             "preposition",
             "modal",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q03-slow.wav"
         },
         {
           "index": 4,
@@ -9104,7 +10250,9 @@
           "features": [
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q04-slow.wav"
         },
         {
           "index": 5,
@@ -9118,7 +10266,9 @@
             "modal",
             "auxiliary",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q05-slow.wav"
         },
         {
           "index": 6,
@@ -9131,7 +10281,9 @@
             "modal",
             "condition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q06-slow.wav"
         },
         {
           "index": 7,
@@ -9145,9 +10297,12 @@
             "modal",
             "auxiliary",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_097/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_097/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Tavi"
     },
     {
       "id": "set_098",
@@ -9165,7 +10320,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q01-slow.wav"
         },
         {
           "index": 2,
@@ -9176,7 +10333,9 @@
           "features": [
             "preposition",
             "time-clause"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q02-slow.wav"
         },
         {
           "index": 3,
@@ -9187,7 +10346,9 @@
           "features": [
             "article",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q03-slow.wav"
         },
         {
           "index": 4,
@@ -9198,7 +10359,9 @@
           "features": [
             "article",
             "modal"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q04-slow.wav"
         },
         {
           "index": 5,
@@ -9211,7 +10374,9 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q05-slow.wav"
         },
         {
           "index": 6,
@@ -9224,7 +10389,9 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q06-slow.wav"
         },
         {
           "index": 7,
@@ -9236,9 +10403,12 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_098/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_098/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Ludo"
     },
     {
       "id": "set_099",
@@ -9256,7 +10426,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q01-slow.wav"
         },
         {
           "index": 2,
@@ -9268,7 +10440,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q02-slow.wav"
         },
         {
           "index": 3,
@@ -9279,7 +10453,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q03-slow.wav"
         },
         {
           "index": 4,
@@ -9290,7 +10466,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q04-slow.wav"
         },
         {
           "index": 5,
@@ -9301,7 +10479,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q05-slow.wav"
         },
         {
           "index": 6,
@@ -9313,7 +10493,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q06-slow.wav"
         },
         {
           "index": 7,
@@ -9326,9 +10508,12 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_099/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_099/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Bodi"
     },
     {
       "id": "set_100",
@@ -9344,7 +10529,9 @@
           "semanticChunks": 1,
           "features": [
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q01.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q01-slow.wav"
         },
         {
           "index": 2,
@@ -9356,7 +10543,9 @@
             "article",
             "preposition",
             "auxiliary"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q02.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q02-slow.wav"
         },
         {
           "index": 3,
@@ -9367,7 +10556,9 @@
           "features": [
             "article",
             "preposition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q03.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q03-slow.wav"
         },
         {
           "index": 4,
@@ -9379,7 +10570,9 @@
             "article",
             "preposition",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q04.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q04-slow.wav"
         },
         {
           "index": 5,
@@ -9389,7 +10582,9 @@
           "semanticChunks": 2,
           "features": [
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q05.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q05-slow.wav"
         },
         {
           "index": 6,
@@ -9402,7 +10597,9 @@
             "preposition",
             "time-clause",
             "connected-speech"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q06.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q06-slow.wav"
         },
         {
           "index": 7,
@@ -9415,9 +10612,12 @@
             "preposition",
             "auxiliary",
             "condition"
-          ]
+          ],
+          "audio": "/audio/exact-listening/set_100/q07.wav",
+          "audioSlow": "/audio/exact-listening/set_100/q07-slow.wav"
         }
-      ]
+      ],
+      "voice": "Gero"
     }
   ]
 }
