@@ -140,8 +140,16 @@ const rankSkill = (progress: VocabularySkillProgress | undefined, now: number): 
 }
 
 export function createMeaningChoices(word: VocabularyWord, pool = vocabularyWords): string[] {
-  const categoryMatches = pool.filter((candidate) => candidate.id !== word.id && candidate.categories.some((id) => word.categories.includes(id)))
-  const candidates = [...shuffle(categoryMatches), ...shuffle(pool)]
+  const alternatives = pool.filter((candidate) => candidate.id !== word.id)
+  const samePartOfSpeech = alternatives.filter((candidate) => candidate.partOfSpeech === word.partOfSpeech)
+  const sameCategoryAndPartOfSpeech = samePartOfSpeech.filter((candidate) => candidate.categories.some((id) => word.categories.includes(id)))
+  const sameCategory = alternatives.filter((candidate) => candidate.categories.some((id) => word.categories.includes(id)))
+  const candidates = [
+    ...shuffle(sameCategoryAndPartOfSpeech),
+    ...shuffle(samePartOfSpeech),
+    ...shuffle(sameCategory),
+    ...shuffle(alternatives),
+  ]
   const choices = [word.meaning]
   for (const candidate of candidates) {
     if (choices.length === 10) break
@@ -158,7 +166,9 @@ export function selectVocabularyQuestions(data: VocabularyData, setSize = 10, no
     .filter((skill) => isRequired(word, skill))
     .map((skill) => ({ word, skill, rank: rankSkill(data.progress[word.id]?.[skill], now.getTime()) })))
     .filter((item) => item.rank >= 0)
-  const spelling = candidates.filter((item) => item.skill === 'spelling').sort((a,b) => b.rank-a.rank)
+  const spelling = candidates
+    .filter((item) => item.skill === 'spelling' && (data.progress[item.word.id]?.meaning.correctCount ?? 0) > 0)
+    .sort((a,b) => b.rank-a.rank)
   const meaning = candidates.filter((item) => item.skill === 'meaning').sort((a,b) => b.rank-a.rank)
   const selected: typeof candidates = []
   const used = new Set<string>()

@@ -63,7 +63,7 @@ function VocabularyTop({ data, enabled, latestResults, onStart, onCategories, on
   const stats = vocabularyStats(data)
   return <>
     <div className="vocab-hero">
-      <div><p className="eyebrow">TOEFL iBT · 1,500 WORDS</p><h1>覚えていない単語に、<br/>学習時間を集中する。</h1><p>意味とスペリングを別々に記録し、復習期限が来た項目を優先して出題します。</p></div>
+      <div><p className="eyebrow">TOEFL iBT · 1,500 WORDS</p><h1>覚えていない単語に、<br/>学習時間を集中する。</h1><p>意味とスペリングを別々に記録し、復習期限が来た項目を優先して出題します。Completeは10択で正解した単語から出題されます。</p></div>
       <div className="vocab-rate"><strong>{stats.rate}%</strong><span>全体の習得率</span></div>
     </div>
     {latestResults.length > 0 && <p className="vocab-set-result" role="status">直前のセット：{latestResults.filter(Boolean).length} / {latestResults.length} 正解</p>}
