@@ -1,0 +1,8 @@
+// Curated for active use in TOEFL Writing: argumentation, comparison,
+// cause and effect, evaluation, evidence, synthesis, and source discussion.
+export const writingCompleteHeadwords = `
+articulate acknowledge advocate constitute contend contradict differentiate discriminate elaborate eliminate exemplify facilitate hinder implement induce integrate intervene overstate perceive refute regulate speculate sustain undermine utilize assume estimate identify interpret involve occur conclude construct maintain contribute demonstrate illustrate imply justify predict promote resolve cite reveal retain obtain restrict
+ambiguous arbitrary biased cognitive coherent controversial crucial detrimental empirical explicit feasible innovative intrinsic irrelevant legitimate plausible prevalent profound rigorous simultaneous sophisticated subsequent sustainable unbiased viable vulnerable specific appropriate relevant sufficient valid fundamental precise accurate diverse
+considerably nonetheless notably presumably mutually tentatively hence
+assessment assumption compliance component comprehension constraint controversy convention correlation credibility criterion deduction deficiency disruption enhancement entity equity essence feasibility framework implication incentive inquiry insight integrity legislation liability magnitude occurrence perception perspective phenomenon potential probability regulation reliance revelation revenue stability synthesis theory threshold validity approach benefit concept environment evidence factor function principle source aspect consequence element impact resource alternative proportion conduct survey
+`.trim().split(/\s+/)

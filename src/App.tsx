@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import rawQuestions from './data/collocations.json'
 import { COURSES, listeningDataset } from './courses'
 import { displayChoice, emptyProgress, localDate, masteryLevel, selectQuestions, shuffle } from './lib'
@@ -8,8 +8,10 @@ import { completeListeningScenario, completeSet, exportData, loadData, recordAns
 import type { AppData, Category, ListeningAssessment, ListeningQuestion, ListeningScenario, MasteryLevel, Question, QuizMode } from './types'
 import { CATEGORY_LABELS, MASTERY_LABELS } from './types'
 
+const VocabularyCourse = lazy(() => import('./VocabularyCourse'))
+
 const questions = rawQuestions as Question[]
-type Screen = 'home' | 'quiz' | 'result' | 'listening' | 'listening-result' | 'questions' | 'detail' | 'settings'
+type Screen = 'home' | 'quiz' | 'result' | 'listening' | 'listening-result' | 'vocabulary' | 'questions' | 'detail' | 'settings'
 
 interface AnswerResult { question: Question; selected: string; correct: boolean }
 interface ListeningResult { question: ListeningQuestion; answer: string; evaluation: ListeningEvaluation; playCount: number; replayMultiplier: number; speedMultiplier: number; usedSlowAudio: boolean; points: number }
@@ -134,7 +136,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      {screen !== 'quiz' && screen !== 'listening' && (
+      {screen !== 'quiz' && screen !== 'listening' && screen !== 'vocabulary' && (
         <header className="site-header">
           <button className="wordmark" onClick={() => navigate('home')} aria-label="ホームへ">mylingo<span>.</span></button>
           <nav aria-label="メインナビゲーション">
@@ -168,6 +170,7 @@ export default function App() {
             onExit={() => navigate('home')}
           />
         )}
+        {screen === 'vocabulary' && <Suspense fallback={<p className="course-loading">Vocabularyを読み込んでいます…</p>}><VocabularyCourse onExit={() => navigate('home')} /></Suspense>}
         {screen === 'listening-result' && <ListeningResultView answers={listeningAnswers} setsToday={data.dailyHistory[localDate()]?.setsCompleted ?? 0} onAgain={startListening} onHome={() => navigate('home')} />}
         {screen === 'result' && (
           <ResultView
@@ -183,7 +186,7 @@ export default function App() {
         {screen === 'detail' && detailId !== null && <QuestionDetail id={detailId} data={data} onBack={() => navigate('questions')} />}
         {screen === 'settings' && <Settings data={data} setData={setData} />}
       </main>
-      {screen !== 'quiz' && screen !== 'listening' && <footer>Small steps, stronger English.</footer>}
+      {screen !== 'quiz' && screen !== 'listening' && screen !== 'vocabulary' && <footer>Small steps, stronger English.</footer>}
     </div>
   )
 }
@@ -232,6 +235,7 @@ function Dashboard({ data, onStart, onStartListening, onNavigate }: {
       <section className="course-grid" aria-label="コースを選ぶ">
         <button className="course-card collocation-card" onClick={() => onStart('normal')}><span className="course-kicker">COLLOCATION</span><strong>10問スタート</strong><small>4択で表現を定着</small><b aria-hidden="true">→</b></button>
         <button className="course-card listening-card" onClick={onStartListening}><span className="course-kicker">EXACT LISTENING</span><strong>7問スタート</strong><small>1 scenario / Exact率 {listeningExactRate}</small><b aria-hidden="true">→</b></button>
+        <button className="course-card vocabulary-card" onClick={() => onNavigate('vocabulary')}><span className="course-kicker">VOCABULARY</span><strong>10問スタート</strong><small>1,500語 · 間隔反復</small><b aria-hidden="true">→</b></button>
       </section>
 
       <section className="section-block">
